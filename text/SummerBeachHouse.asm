@@ -1,9 +1,27 @@
-_SummerBeachHouseSurfinDudeText1::
-	text "Whoa!"
+_SummerBeachHouseImposterBattleText::
+	text "I'm challenging"
+	line "you to see"
+	cont "whose partner is"
+	cont "the strongest!"
+	done
 
-	para "Your PIKACHU knows"
-	line "how to SURF! So,"
-	cont "I'm not alone..."
+_SummerBeachHouseImposterEndBattleText::
+	text "I"
+	line "guess you win."
+	prompt
+
+_SummerBeachHouseImposterAfterBattleText::
+	text "Think of all"
+	line "the money I can"
+	cont "make doing imp-"
+	cont "ressions of you!"
+	done
+
+_SummerBeachHouseSurfinDudeText1::
+	text "Whoa! Your"
+	line "Clefairy knows"
+	cont "how to SURF!"
+	cont "So I'm not alone..."
 
 	para "Great! You earned"
 	line "the right to SURF"
@@ -27,6 +45,10 @@ _SummerBeachHouseSurfinDudeText4::
 	done
 
 _SummerBeachHousePikachuText::
+	text "CLEFAIRY: Fairii"
+	done
+	
+_SummerBeachHouseFairyText::
 	text "PIKACHU: Pikaa"
 	done
 

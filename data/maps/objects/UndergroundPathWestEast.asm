@@ -1,3 +1,6 @@
+	object_const_def
+	const_export UNDERGROUNDPATHWESTEAST_CHIEF
+
 UndergroundPathWestEast_Object:
 	db $1 ; border block
 
@@ -8,5 +11,6 @@ UndergroundPathWestEast_Object:
 	def_bg_events
 
 	def_object_events
+	object_event 26,  3, SPRITE_CHIEF, STAY, LEFT, TEXT_UNDERGROUNDPATHWESTEAST_CHIEF
 
 	def_warps_to UNDERGROUND_PATH_WEST_EAST

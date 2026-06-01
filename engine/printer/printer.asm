@@ -661,7 +661,7 @@ Printer_PrepareSurfingMinigameHighScoreTileMap::
 	lb bc, 6, 16
 	call Diploma_Surfing_CopyBox
 	ld de, .PikachusBeachString
-	hlcoord 3, 2
+	hlcoord 2, 2
 	call PlaceString
 	ld de, .HiScoreString
 	hlcoord 9, 4
@@ -725,7 +725,7 @@ INCBIN "gfx/surfing_pikachu/high_score_1.tilemap"
 INCBIN "gfx/surfing_pikachu/high_score_2.tilemap"
 
 .PikachusBeachString:
-	db "Pikachu's Beach@"
+	db "Clefairy's Beach@"
 .HiScoreString:
 	db "'s Hi-Score@"
 .PointsString:

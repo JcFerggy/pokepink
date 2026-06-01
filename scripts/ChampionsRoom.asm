@@ -70,8 +70,9 @@ ChampionsRoomRivalReadyToBattleScript:
 	ld [wCurOpponent], a
 
 	; select which team to use during the encounter
-	ld a, [wRivalStarter]
-	add $0 ; Wow GameFreak
+	;ld a, [wRivalStarter]
+	;add $0 ; Wow GameFreak
+	ld a, 1 ; trainer number
 	ld [wTrainerNo], a
 
 	xor a
@@ -86,6 +87,45 @@ ChampionsRoomRivalDefeatedScript:
 	jp z, ResetRivalScript
 	call UpdateSprites
 	SetEvent EVENT_BEAT_CHAMPION_RIVAL
+	SetEvent EVENT_BEAT_GREEN
+	
+	ld a, TOGGLE_CERULEANTRASHEDHOUSE_CHIEF_1
+	ld [wToggleableObjectIndex], a
+	predef HideObject
+
+	ld a, TOGGLE_CERULEANTRASHEDHOUSE_CHIEF_2
+	ld [wToggleableObjectIndex], a
+	predef HideObject
+
+	ld a, TOGGLE_CERULEANTRASHEDHOUSE_CHIEF_3
+	ld [wToggleableObjectIndex], a
+	predef HideObject
+
+	ld a, TOGGLE_CERULEANTRASHEDHOUSE_CHIEF_4
+	ld [wToggleableObjectIndex], a
+	predef HideObject
+
+	ld a, TOGGLE_CERULEANTRASHEDHOUSE_CHIEF_5
+	ld [wToggleableObjectIndex], a
+	predef HideObject
+
+	ld a, TOGGLE_CERULEANTRASHEDHOUSE_CHIEF_6
+	ld [wToggleableObjectIndex], a
+	predef HideObject
+	
+	ld a, TOGGLE_CERULEANTRASHEDHOUSE_CHIEF_7
+	ld [wToggleableObjectIndex], a
+	predef ShowObject
+	
+	ld a, TOGGLE_SUMMER_BEACH_HOUSE_IMPOSTER
+	ld [wToggleableObjectIndex], a
+	predef ShowObject
+	ld a, TOGGLE_SUMMER_BEACH_HOUSE_FAIRY
+	ld [wToggleableObjectIndex], a
+	predef ShowObject
+	
+	;ResetEvents EVENT_BEAT_CERULEANTRASHEDHOUSE_TRAINER_0, EVENT_BEAT_CERULEANTRASHEDHOUSE_TRAINER_6
+	
 	ld a, PAD_CTRL_PAD
 	ld [wJoyIgnore], a
 	ld a, TEXT_CHAMPIONSROOM_RIVAL

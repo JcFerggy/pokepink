@@ -128,13 +128,15 @@ SetPal_Generic:
 	ret
 
 SetPal_NidorinoIntro:
-	ld hl, PalPacket_NidorinoIntro
+	ld hl, PalPacket_GameFreakIntro
 	ld de, BlkPacket_NidorinoIntro
+	ld [wDefaultPaletteCommand], a
 	ret
 
 SetPal_GameFreakIntro:
 	ld hl, PalPacket_GameFreakIntro
 	ld de, BlkPacket_GameFreakIntro
+	;ld a, SET_PAL_TITLE_SCREEN
 	ld a, SET_PAL_GENERIC
 	ld [wDefaultPaletteCommand], a
 	ret
@@ -151,12 +153,14 @@ SetPal_Overworld:
 	cp CAVERN
 	jr z, .caveOrBruno
 	ld a, [wCurMap]
+;	cp CHAMPIONS_ROOM
+;	jr z, .ChampionPal
 	cp FIRST_INDOOR_MAP
 	jr c, .townOrRoute
 	cp CERULEAN_CAVE_2F
 	jr c, .normalDungeonOrBuilding
 	cp CERULEAN_CAVE_1F + 1
-	jr c, .caveOrBruno
+	jr c, .normalDungeonOrBuilding
 	cp LORELEIS_ROOM
 	jr z, .Lorelei
 	cp BRUNOS_ROOM
@@ -183,14 +187,44 @@ SetPal_Overworld:
 	ld a, PAL_GRAYMON - 1
 	jr .town
 .caveOrBruno
+	ld a, [wCurMap]
+	cp CERULEAN_CAVE_1F
+	jr z, .CeruleanCaveYellow
+	cp CERULEAN_CAVE_2F
+	jr z, .CeruleanCaveYellow
+	cp CERULEAN_CAVE_B1F
+	jr z, .CeruleanCaveYellow
 	ld a, PAL_CAVE - 1
 	jr .town
 .Lorelei
 	xor a
 	jr .town
 .trade_center_colosseum
-	ld a, PAL_GRAYMON - 1
+	ld a, PAL_GRAYMON_YELLOW - 1
 	jr .town
+.CeruleanCaveYellow
+	ld a, PAL_CAVE_YELLOW - 1
+	jr .town
+;.ChampionPal
+	;ld a, [wRivalStarter]
+	;cp 1
+	;jr z, .blastoisepal
+	;cp 2
+	;jr z, .venusaurpal
+	;cp 3
+	;jr z, .charizardpal
+;	ld a, PAL_INDIGO - 1
+;	jr .town
+; default = 3
+;.blastoisepal
+;	ld a, PAL_CERULEAN - 1
+;	jr .town
+;.venusaurpal
+;	ld a, PAL_CELADON - 1
+;	jr .town
+;.charizardpal
+;	ld a, PAL_CINNABAR - 1
+;	jr .town
 
 ; used when a Pokemon is the only thing on the screen
 ; such as evolution, trading and the Hall of Fame
@@ -262,6 +296,11 @@ SetPal_PikachusBeachTitle::
 	ld hl, PalPacket_PikachusBeachTitle
 	ld de, UnknownPacket_72751
 	ret
+	
+SetPal_Clefairy::
+	ld hl, PalPacket_Clefairy
+	ld de, BlkPacket_WholeScreen
+	ret
 
 SetPalFunctions:
 ; entries correspond to SET_PAL_* constants
@@ -281,6 +320,7 @@ SetPalFunctions:
 	dw SetPal_TrainerCard
 	dw SetPal_PikachusBeach
 	dw SetPal_PikachusBeachTitle
+	dw SetPal_Clefairy
 
 ; The length of the blk data of each badge on the Trainer Card.
 ; The Rainbow Badge has 3 entries because of its many colors.
@@ -316,7 +356,7 @@ YellowIntroPaletteAction::
 	ld a, e
 	and a
 	jr nz, .asm_720bd
-	ld hl, PalPacket_Generic
+	ld hl, PalPacket_Titlescreen
 	ldh a, [hOnCGB]
 	and a
 	jp z, SendSGBPacket
@@ -328,7 +368,7 @@ YellowIntroPaletteAction::
 	and a
 	jp z, SendSGBPacket
 	call InitCGBPalettes
-	ld hl, PalPacket_Generic
+	ld hl, PalPacket_Titlescreen
 	inc hl
 	ld a, [hli]
 	call GetCGBBasePalAddress
@@ -351,7 +391,7 @@ LoadOverworldPikachuFrontpicPalettes::
 	ld hl, wPartyMenuBlkPacket
 	ld [hl], a
 	ld hl, wPartyMenuBlkPacket + 2
-	ld a, PAL_PIKACHU_PORTRAIT
+	ld a, PAL_PINKMON
 	ld [hl], a
 	ld hl, wPalPacket
 	ldh a, [hOnCGB]
@@ -435,7 +475,7 @@ GetPal_Pikachu::
 	jr .town
 
 .battleOrTradeCenter
-	ld a, PAL_GRAYMON - 1
+	ld a, PAL_GRAYMON_YELLOW - 1
 	jr .town
 
 InitPartyMenuBlkPacket:

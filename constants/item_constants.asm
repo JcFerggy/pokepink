@@ -59,7 +59,7 @@ DEF SAFARI_ROCK EQU CASCADEBADGE ; overload
 	const LEAF_STONE    ; $2F
 	const CARD_KEY      ; $30
 	const NUGGET        ; $31
-	const ITEM_32       ; $32 ; unused
+	const ITEM_32       ; $32 ;PINK LINKINGCABLE
 	const POKE_DOLL     ; $33
 	const FULL_HEAL     ; $34
 	const REVIVE        ; $35
@@ -222,4 +222,4 @@ DEF MAX_HIDDEN_COINS EQU 16
 
 ; used for Time Capsule held item compatibility
 DEF TWISTEDSPOON_GSC EQU $60
-DEF LIGHT_BALL_GSC   EQU $a3
+DEF LIGHT_BALL_GSC   EQU $BD ;PINK Set to unused Mirage Mail

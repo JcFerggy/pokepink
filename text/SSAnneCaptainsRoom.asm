@@ -62,3 +62,13 @@ _SSAnneCaptainsRoomSeasickBookText::
 	cont "The CAPTAIN's"
 	cont "reading this!"
 	done
+	
+_SSAnneCaptainsRoomCaptainReturn::
+	text "CAPTAIN: Woah!"
+	line "Look at Mr. "
+	cont "famous over here."
+		
+	para "I've been doing"
+	line "good. Staying"
+	cont "healthy at least."
+	done

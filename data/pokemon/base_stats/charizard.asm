@@ -22,4 +22,5 @@
 	     CUT,          FLY,          STRENGTH
 	; end
 
-	db 0 ; padding
+	db BANK(CharizardPicFront)
+	assert BANK(CharizardPicFront) == BANK(CharizardPicBack)

@@ -58,7 +58,7 @@ HiddenItemCoords:
 	hidden_item POKEMON_TOWER_5F,               4,  12
 	hidden_item VERMILION_CITY,                14,  11
 	hidden_item CELADON_CITY,                  48,  15
-	hidden_item SAFARI_ZONE_GATE,              10,   1 ; inaccessible
+	hidden_item VERMILION_DOCK,              	21,   0 ; PINK took unused
 	hidden_item POKEMON_MANSION_1F,             8,  16
 	assert_max_table_length MAX_HIDDEN_ITEMS
 	db -1 ; end

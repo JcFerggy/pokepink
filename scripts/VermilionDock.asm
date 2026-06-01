@@ -212,6 +212,11 @@ VermilionDock_TextPointers:
 	def_text_pointers
 	dw_const VermilionDockUnusedText, TEXT_VERMILIONDOCK_UNUSED
 
-VermilionDockUnusedText:
-	text_far _VermilionDockUnusedText
+VermilionDockUnusedText:;PINK
+	ld hl, .text
+	call PrintText
+	ret
+
+.text
+	text_far _VermilionDockUnusedText 
 	text_end

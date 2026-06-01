@@ -21,7 +21,7 @@ _Museum2FScientistText::
 	done
 
 _Museum2FBrunetteGirlText::
-	text "I want a PIKACHU!"
+	text "I want a CLEFAIRY!"
 	line "It's so cute!"
 
 	para "I asked my Daddy"
@@ -29,12 +29,12 @@ _Museum2FBrunetteGirlText::
 	done
 
 _Museum2FHikerText::
-	text "Yeah, a PIKACHU"
+	text "Yeah, a CLEFAIRY"
 	line "soon, I promise!"
 	done
 
 _Museum2FPikachuText1::
-	text "Your PIKACHU looks"
+	text "Your CLEFAIRY looks"
 	line "untamed."
 	cont "May I have it for"
 	cont "my daughter?"
@@ -42,7 +42,7 @@ _Museum2FPikachuText1::
 
 _Museum2FPikachuText2::
 	text "I'd like to get"
-	line "that PIKACHU off"
+	line "that CLEFAIRY off"
 	cont "you, but it's too"
 	cont "attached to you."
 	done

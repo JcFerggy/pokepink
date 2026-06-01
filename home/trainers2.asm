@@ -8,7 +8,7 @@ GetTrainerInformation::
 	ld a, [wTrainerClass]
 	dec a
 	ld hl, TrainerPicAndMoneyPointers
-	ld bc, $5
+	ld bc, $6 ;PINK
 	call AddNTimes
 	ld de, wTrainerPicPointer
 	ld a, [hli]
@@ -16,6 +16,11 @@ GetTrainerInformation::
 	inc de
 	ld a, [hli]
 	ld [de], a
+	
+   inc de ;PINK
+   ld a, [hli]
+   ld [de], a
+   
 	ld de, wTrainerBaseMoney
 	ld a, [hli]
 	ld [de], a

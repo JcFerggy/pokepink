@@ -79,7 +79,7 @@ HiddenEventMaps:
 	hidden_event_map CELADON_GYM
 	hidden_event_map GAME_CORNER
 	hidden_event_map FUCHSIA_POKECENTER
-	hidden_event_map SAFARI_ZONE_GATE
+	hidden_event_map VERMILION_DOCK
 	hidden_event_map FUCHSIA_GYM
 	hidden_event_map POKEMON_MANSION_1F
 	hidden_event_map CINNABAR_GYM
@@ -534,8 +534,8 @@ DEF ANY_FACING EQU $d0
 	hidden_event  0,  4, PrintBenchGuyText, SPRITE_FACING_UP
 	db -1 ; end
 
-	hidden_events_for SAFARI_ZONE_GATE
-	hidden_event 10,  1, HiddenItems, NUGGET ; inaccessible
+	hidden_events_for VERMILION_DOCK
+	hidden_event 21,  0, HiddenItems, FULL_RESTORE ; PINK made accessible
 	db -1 ; end
 
 	hidden_events_for FUCHSIA_GYM

@@ -137,20 +137,20 @@ _CeruleanCityGuardText::
 	done
 
 _CeruleanCityCooltrainerF1ElectrodeUseSonicboomText::
-	text "OK! ELECTRODE!"
+	text "OK! VOLTORB!"
 	line "Use SONICBOOM!"
-	cont "Please ELECTRODE,"
+	cont "Please VOLTORB,"
 	cont "pay attention!"
 	done
 
 _CeruleanCityCooltrainerF1ElectrodePunchText::
-	text "ELECTRODE, TACKLE!"
+	text "VOLTORB, TACKLE!"
 	line "No! You blew it"
 	cont "again!"
 	done
 
 _CeruleanCityCooltrainerF1ElectrodeWithdrawText::
-	text "ELECTRODE, SWIFT!"
+	text "VOLTORB, SWIFT!"
 	line "No! That's wrong!"
 
 	para "Training #MON"
@@ -163,22 +163,22 @@ _CeruleanCityCooltrainerF1ElectrodeWithdrawText::
 	done
 
 _CeruleanCityElectrodeTookASnoozeText::
-	text "ELECTRODE took a"
+	text "VOLTORB took a"
 	line "snooze..."
 	done
 
 _CeruleanCityElectrodeIsLoafingAroundText::
-	text "ELECTRODE is"
+	text "VOLTORB is"
 	line "loafing around..."
 	done
 
 _CeruleanCityElectrodeTurnedAwayText::
-	text "ELECTRODE turned"
+	text "VOLTORB turned"
 	line "away..."
 	done
 
 _CeruleanCityElectrodeIgnoredOrdersText::
-	text "ELECTRODE"
+	text "VOLTORB"
 	line "ignored orders..."
 	done
 

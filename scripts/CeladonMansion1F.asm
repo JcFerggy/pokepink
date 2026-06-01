@@ -13,7 +13,7 @@ CeladonMansion1F_TextPointers:
 CeladonMansion1FMeowthText:
 	text_far _CeladonMansion1FMeowthText
 	text_asm
-	ld a, MEOWTH
+	ld a, BULBASAUR
 	call PlayCry
 	jp TextScriptEnd
 
@@ -33,14 +33,14 @@ CeladonMansion1FGrannyText:
 CeladonMansion1FClefairyText:
 	text_far _CeladonMansion1FClefairyText
 	text_asm
-	ld a, CLEFAIRY
+	ld a, PIKACHU
 	call PlayCry
 	jp TextScriptEnd
 
 CeladonMansion1FNidoranFText:
 	text_far _CeladonMansion1FNidoranFText
 	text_asm
-	ld a, NIDORAN_F
+	ld a, NIDORAN_M
 	call PlayCry
 	jp TextScriptEnd
 

@@ -16,19 +16,20 @@ _MtMoon1FHikerAfterBattleText::
 	done
 
 _MtMoon1FYoungster1BattleText::
-	text "Did you come to"
-	line "explore too?"
+	text "Hi, do you have a"
+	line "CLEFAIRY?"
 	done
 
 _MtMoon1FYoungster1EndBattleText::
-	text "Losing"
-	line "stinks!"
+	text "Oh no,"
+	line "really?"
+
 	prompt
 
 _MtMoon1FYoungster1AfterBattleText::
-	text "I came down here"
-	line "to show off to"
-	cont "girls."
+	text "I looked forever,"
+	line "but I never found"
+	cont "a CLEFAIRY here!"
 	done
 
 _MtMoon1FCooltrainerF1BattleText::

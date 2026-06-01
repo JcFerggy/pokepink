@@ -6,6 +6,7 @@ VermilionDock_Object:
 	warp_event 14,  2, SS_ANNE_1F, 2
 
 	def_bg_events
+	bg_event 11,  1, TEXT_VERMILIONDOCK_UNUSED ;PINK
 
 	def_object_events
 

@@ -80,7 +80,7 @@ CopyTileIDsFromList_ZeroBaseTileID:
 	predef_jump CopyTileIDsFromList
 
 PlayShootingStar:
-	ld b, SET_PAL_GAME_FREAK_INTRO
+	ld b, SET_PAL_NIDORINO_INTRO ;Inserted new code here
 	call RunPaletteCommand
 	farcall LoadCopyrightAndTextBoxTiles
 	ldpal a, SHADE_BLACK, SHADE_DARK, SHADE_LIGHT, SHADE_WHITE
@@ -90,6 +90,9 @@ PlayShootingStar:
 	call DelayFrames
 	call ClearScreen
 	call DisableLCD
+	ld b, SET_PAL_GAME_FREAK_INTRO ;Moved from above to here.
+	call RunPaletteCommand
+	call UpdateCGBPal_BGP
 	xor a
 	ld [wCurOpponent], a
 	call IntroDrawBlackBars

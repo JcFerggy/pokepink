@@ -97,7 +97,7 @@ SSAnne2FRivalStartBattleScript:
 	call Delay3
 	ld a, OPP_RIVAL2
 	ld [wCurOpponent], a
-	ld a, $1
+	ld a, 1 ; trainer number
 	ld [wTrainerNo], a
 	call SSAnne2FSetFacingDirectionScript
 	ld a, SCRIPT_SSANNE2F_RIVAL_AFTER_BATTLE

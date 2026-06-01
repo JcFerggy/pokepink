@@ -49,7 +49,7 @@ KeyItemFlags:
 	dbit FALSE ; LEAF_STONE
 	dbit TRUE  ; CARD_KEY
 	dbit FALSE ; NUGGET
-	dbit FALSE ; ITEM_32
+	dbit FALSE ; PINK LINKINGCABLE was ITEM_32
 	dbit FALSE ; POKE_DOLL
 	dbit FALSE ; FULL_HEAL
 	dbit FALSE ; REVIVE

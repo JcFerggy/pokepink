@@ -367,9 +367,9 @@ LearnMoveFromLevelUp:
 	callfar IsThisPartyMonStarterPikachu
 	jr nc, .done
 	ld a, [wMoveNum]
-	cp THUNDERBOLT
+	cp METRONOME
 	jr z, .foundThunderOrThunderbolt
-	cp THUNDER
+	cp PSYCHIC_M
 	jr nz, .done
 .foundThunderOrThunderbolt
 	ld a, $5

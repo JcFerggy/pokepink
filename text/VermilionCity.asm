@@ -89,9 +89,9 @@ _VermilionCitySailor2Text::
 
 _OfficerJennyText1::
 	text "I just caught a"
-	line "SQUIRTLE that was"
-	cont "always getting"
-	cont "into mischief."
+	line "CHARMANDER that"
+	cont "was lighting"
+	cont "bushes on fire."
 
 	para "I think it needs a"
 	line "good trainer to"
@@ -106,9 +106,9 @@ _OfficerJennyText2::
 	line "good trainer!"
 
 	para "I just caught a"
-	line "SQUIRTLE that was"
-	cont "always getting"
-	cont "into mischief."
+	line "CHARMANDER that"
+	cont "was lighting"
+	cont "bushes on fire."
 
 	para "Would you take"
 	line "good care of it?"
@@ -116,7 +116,7 @@ _OfficerJennyText2::
 
 _OfficerJennyText3::
 	text "OK! Please treat"
-	line "SQUIRTLE right!@"
+	line "CHARMANDER right!@"
 	text_end
 
 _OfficerJennyText4::
@@ -125,7 +125,7 @@ _OfficerJennyText4::
 	done
 
 _OfficerJennyText5::
-	text "How is SQUIRTLE"
+	text "How is CHARMANDER"
 	line "doing?"
 	done
 
@@ -166,4 +166,14 @@ _VermilionCityGymSignText::
 
 _VermilionCityHarborSignText::
 	text "VERMILION HARBOR"
+	done
+
+_VermilionReturningChap::
+	text "Excuse me, are"
+	line "you the #MON"
+	cont "league champion?"
+	
+	para "No ticket needed."
+	line "Please sir,"
+	cont "come on abord!"
 	done

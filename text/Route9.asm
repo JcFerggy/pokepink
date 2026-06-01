@@ -15,20 +15,19 @@ _Route9CooltrainerF1AfterBattleText::
 	cont "dark tunnel ahead."
 	done
 
-_Route9AJBattleText::
-	text "I aim to be the"
-	line "ultimate trainer!"
+_Route9AJBattleText:: ;PINK Removed AJ anime reference
+	text "Who's that walking"
+	line "with those good"
+	cont "looking #MON?"
 	done
 
 _Route9AJEndBattleText::
-	text "My"
-	line "SANDSHREW lost?"
+	text "Out"
+	line "like a light!"
 	prompt
 
 _Route9AJAfterBattleText::
-	text "I'll restart my"
-	line "100-win streak"
-	cont "with SANDSHREW."
+	text "Keep walking!"
 	done
 
 _Route9CooltrainerM2BattleText::

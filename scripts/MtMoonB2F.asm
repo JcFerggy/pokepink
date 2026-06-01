@@ -9,12 +9,16 @@ MtMoonB2F_Script:
 	ret z
 	ld hl, MtMoonB2FFossilAreaCoords
 	call ArePlayerCoordsInArray
+	ld hl, wStatusFlags4 ;PINK fix
 	jr nc, .enable_battles
-	ld hl, wStatusFlags4
+;	ld hl, wStatusFlags4
+	ld a, [wStatusFlags6]
+	bit BIT_ESCAPE_WARP, a
+	jr nz, .enable_battles
 	set BIT_NO_BATTLES, [hl]
 	ret
 .enable_battles
-	ld hl, wStatusFlags4
+;	ld hl, wStatusFlags4
 	res BIT_NO_BATTLES, [hl]
 	ret
 

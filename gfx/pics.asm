@@ -351,7 +351,7 @@ BirdKeeperPic::    INCBIN "gfx/trainers/birdkeeper.pic"
 BlackbeltPic::     INCBIN "gfx/trainers/blackbelt.pic"
 Rival1Pic::        INCBIN "gfx/trainers/rival1.pic"
 ProfOakPic::       INCBIN "gfx/trainers/prof.oak.pic"
-ChiefPic::
+
 ScientistPic::     INCBIN "gfx/trainers/scientist.pic"
 GiovanniPic::      INCBIN "gfx/trainers/giovanni.pic"
 RocketPic::        INCBIN "gfx/trainers/rocket.pic"
@@ -380,3 +380,5 @@ SECTION "Pics 7", ROMX
 RedPicBack::       INCBIN "gfx/player/redb.pic"
 OldManPicBack::    INCBIN "gfx/battle/oldmanb.pic"
 ProfOakPicBack::   INCBIN "gfx/battle/prof.oakb.pic"
+ChiefPic:: 		   INCBIN "gfx/trainers/cheif.pic";PINK
+YellowPic:: 	   INCBIN "gfx/trainers/yellowmanga.pic";PINK

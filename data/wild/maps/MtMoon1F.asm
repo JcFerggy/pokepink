@@ -8,8 +8,8 @@ MtMoon1FWildMons:
 	db 10, ZUBAT
 	db 10, GEODUDE
 	db 11, ZUBAT
-	db 12, SANDSHREW
-	db 11, CLEFAIRY
+	db 12, EKANS
+	db 11, JIGGLYPUFF
 	end_grass_wildmons
 
 	def_water_wildmons 0 ; encounter rate

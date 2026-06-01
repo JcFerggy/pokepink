@@ -16,7 +16,7 @@ TrainerAIPointers:
 	dbw 3, GenericAI
 	dbw 3, GenericAI
 	dbw 3, GenericAI
-	dbw 3, JugglerAI ; unused_juggler
+	dbw 1, Rival3AI ; unused_juggler
 	dbw 3, GenericAI
 	dbw 3, GenericAI
 	dbw 3, GenericAI
@@ -30,7 +30,7 @@ TrainerAIPointers:
 	dbw 2, BlackbeltAI ; blackbelt
 	dbw 3, GenericAI ; rival1
 	dbw 3, GenericAI
-	dbw 1, GenericAI ; chief
+	dbw 1, Rival2AI ; chief
 	dbw 3, GenericAI
 	dbw 1, GiovanniAI ; giovanni
 	dbw 3, GenericAI

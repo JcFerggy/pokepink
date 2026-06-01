@@ -49,7 +49,7 @@ ItemNames::
 	li "LEAF STONE"
 	li "CARD KEY"
 	li "NUGGET"
-	li "PP UP" ; ITEM_32
+	li "LINKINGCABLE" ; ITEM_32
 	li "POKé DOLL"
 	li "FULL HEAL"
 	li "REVIVE"

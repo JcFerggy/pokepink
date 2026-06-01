@@ -40,18 +40,18 @@ TitleScreen_PlacePikaSpeechBubble:
 	ret
 
 TitleScreen_PlacePikachu:
-	hlcoord 4, 8
+	hlcoord 3, 9
 	ld de, TitleScreenPikachuTilemap
-	lb bc, 9, 12
+	lb bc, 8, 14
 	call Bank3D_CopyBox
-	hlcoord 16, 10
-	ld [hl], $96
-	hlcoord 16, 11
-	ld [hl], $9d
-	hlcoord 16, 12
-	ld [hl], $a7
-	hlcoord 16, 13
-	ld [hl], $b1
+	hlcoord 13, 16
+	ld [hl], $8E
+	hlcoord 14, 16
+	ld [hl], $8E
+	hlcoord 15, 16
+	ld [hl], $BE
+	;hlcoord 16, 16
+	;ld [hl], $00
 	ld hl, TitleScreenPikachuEyesOAMData
 	ld de, wShadowOAM
 	ld bc, $20
@@ -59,14 +59,14 @@ TitleScreen_PlacePikachu:
 	ret
 
 TitleScreenPikachuEyesOAMData:
-	db $60, $40, $f1, $22
-	db $60, $48, $f0, $22
-	db $68, $40, $f3, $22
-	db $68, $48, $f2, $22
-	db $60, $60, $f0, $02
-	db $60, $68, $f1, $02
-	db $68, $60, $f2, $02
-	db $68, $68, $f3, $02
+	db $78, $40, $f0, $00
+	db $78, $48, $f1, $00
+	db $80, $40, $f2, $00
+	db $80, $48, $f3, $00
+	db $78, $60, $f1, $20
+	db $78, $68, $f0, $20
+	db $80, $60, $f3, $20
+	db $80, $68, $f2, $20
 
 Bank3D_CopyBox:
 ; copy cxb (xy) screen area from de to hl

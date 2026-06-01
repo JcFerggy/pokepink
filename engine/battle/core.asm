@@ -7,6 +7,18 @@ INCLUDE "data/battle/always_happen_effects.asm"
 INCLUDE "data/battle/special_effects.asm"
 
 SlidePlayerAndEnemySilhouettesOnScreen:
+	ld a, [wCurOpponent] ;PINK For BLUE Busybody Chief trainer class in Safari Zone.
+	cp OPP_CHIEF
+	jr nz, .setupBattle
+	
+
+	xor a
+	ld [wListScrollOffset], a
+	ld a, BATTLE_TYPE_NORMAL
+	ld [wBattleType], a
+
+
+.setupBattle:
 	call LoadPlayerBackPic
 	ld a, MESSAGE_BOX ; the usual text box at the bottom of the screen
 	ld [wTextBoxID], a
@@ -1223,6 +1235,8 @@ SlideDownFaintedMonPic:
 	set BIT_NO_TEXT_DELAY, a
 	ld [wStatusFlags5], a
 	ld b, PIC_HEIGHT ; number of times to slide
+	xor a ;PINK slide fix
+	ld [hAutoBGTransferEnabled], a
 .slideStepLoop ; each iteration, the mon is slid down one row
 	push bc
 	push de
@@ -1252,6 +1266,8 @@ SlideDownFaintedMonPic:
 	add hl, bc
 	ld de, SevenSpacesText
 	call PlaceString
+	ld a, 1 ;PINK slide fix
+	ld [hAutoBGTransferEnabled], a
 	ld c, 2
 	call DelayFrames
 	pop hl
@@ -1278,6 +1294,8 @@ SlideTrainerPicOffScreen:
 	push bc
 	push hl
 	ld b, PIC_HEIGHT ; number of rows
+	xor a ;PINK slide fix
+	ld [hAutoBGTransferEnabled], a
 .rowLoop
 	push hl
 	ldh a, [hSlideAmount]
@@ -1303,6 +1321,8 @@ SlideTrainerPicOffScreen:
 	add hl, de
 	dec b
 	jr nz, .rowLoop
+	ld a, 1;PINK slide fix
+	ld [hAutoBGTransferEnabled], a
 	ld c, 2
 	call DelayFrames
 	pop hl
@@ -6192,9 +6212,27 @@ LoadEnemyMonData:
 	ld b, SPDSPCDV_TRAINER
 	jr z, .storeDVs
 ; random DVs for wild mon
-	call BattleRandom
+
+
+;PINK Start of new code
+
+	ld a, [wEnemyMonSpecies]
+	cp MEW
+	jr nz, .randomDVs
+
+; GF Mew gets perfect DVs
+	ld a, $FF
+	ld b, $FF
+	jr .storeDVs
+
+.randomDVs
+	call BattleRandom ; generate random DVs 
 	ld b, a
 	call BattleRandom
+
+;PINK end of new code.
+
+
 .storeDVs
 	ld hl, wEnemyMonDVs
 	ld [hli], a

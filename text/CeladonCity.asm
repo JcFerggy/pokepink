@@ -1,6 +1,6 @@
 _CeladonCityLittleGirlText::
 	text "I got my KOFFING"
-	line "from my friend!"
+	line "in CINNABAR!"
 
 	para "We get along now,"
 	line "because I was"

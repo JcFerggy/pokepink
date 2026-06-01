@@ -90,6 +90,7 @@ PlayerSpinWhileMovingDown:
 	ld [hli], a ; wPlayerSpinWhileMovingUpOrDownAnimMaxY
 	call GetPlayerTeleportAnimFrameDelay
 	ld [hl], a ; wPlayerSpinWhileMovingUpOrDownAnimFrameDelay
+	ld hl, wFacingDirectionList ;PINK following wiki bug fix
 	jp PlayerSpinWhileMovingUpOrDown
 
 
@@ -112,6 +113,7 @@ _LeaveMapAnim::
 	ld [hli], a ; wPlayerSpinWhileMovingUpOrDownAnimMaxY
 	call GetPlayerTeleportAnimFrameDelay
 	ld [hl], a ; wPlayerSpinWhileMovingUpOrDownAnimFrameDelay
+	ld hl, wFacingDirectionList ;PINK following wiki bug fix
 	call PlayerSpinWhileMovingUpOrDown
 	call IsPlayerStandingOnWarpPadOrHole
 	ld a, b

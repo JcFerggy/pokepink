@@ -184,17 +184,17 @@ _FuchsiaGymRocker6BattleText::
 
 _FuchsiaGymRocker6EndBattleText::
 	text "Dropped"
-	line "my balls!"
+	line "my eggs!" ;PINK
 	prompt
 
-_FuchsiaGymRocker6AfterBattleText::
-	text "Where there is"
-	line "light, there is"
-	cont "shadow!"
+_FuchsiaGymRocker6AfterBattleText:: ;PINK manga reference
+	text "Don't tell KOGA"
+	line "that I am selling"
+	cont "Chansey's eggs."
 
-	para "Light and shadow!"
-	line "Which do you"
-	cont "choose?"
+	para "They are quite"
+	line "nutritious and"
+	cont "sell for a lot!"
 	done
 
 _FuchsiaGymGymGuideChampInMakingText::

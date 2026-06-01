@@ -63,19 +63,19 @@ _ViridianForestYoungster4AfterBattleText::
 	done
 
 _ViridianForestCooltrainerFBattleText::
-	text "Hi, do you have a"
-	line "PIKACHU?"
+	text "Did you come to"
+	line "explore too?"
 	done
 
 _ViridianForestCooltrainerFEndBattleText::
-	text "Oh no,"
-	line "really?"
+	text "Losing"
+	line "stinks!"
 	prompt
 
 _ViridianForestCooltrainerFAfterBattleText::
-	text "I looked forever,"
-	line "but I never found"
-	cont "a PIKACHU here!"
+	text "I came down here"
+	line "to show off to"
+	cont "cute guys."
 	done
 
 _ViridianForestYoungster5BattleText::

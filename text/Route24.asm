@@ -162,7 +162,7 @@ _Route24DamianText1::
 	line "raising #MON."
 
 	para "I should release"
-	line "my CHARMANDER"
+	line "my SQUIRTLE"
 	cont "because I haven't"
 	cont "raised it well..."
 
@@ -173,7 +173,7 @@ _Route24DamianText1::
 
 _Route24DamianText2::
 	text "Take good care of"
-	line "my CHARMANDER!@"
+	line "my SQUIRTLE!@"
 	text_end
 
 _Route24DamianText3::
@@ -182,6 +182,6 @@ _Route24DamianText3::
 	done
 
 _Route24DamianText4::
-	text "How's CHARMANDER"
+	text "How's SQUIRTLE"
 	line "doing?"
 	done

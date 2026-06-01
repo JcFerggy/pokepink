@@ -36,7 +36,13 @@ SSAnneCaptainsRoomCaptainText:
 	ld hl, SSAnneCaptainsRoomCaptainHM01NoRoomText
 	call PrintText
 	jr .done
+.returning_chap
+	ld hl, SSAnneCaptainsRoomCaptainReturn
+	call PrintText
+	jr .done
 .got_item
+	CheckEvent EVENT_BEAT_GREEN
+	jr nz, .returning_chap
 	ld hl, SSAnneCaptainsRoomCaptainNotSickAnymoreText
 	call PrintText
 .done
@@ -83,10 +89,15 @@ SSAnneCaptainsRoomCaptainHM01NoRoomText:
 	text_far _SSAnneCaptainsRoomCaptainHM01NoRoomText
 	text_end
 
+
 SSAnneCaptainsRoomTrashText:
 	text_far _SSAnneCaptainsRoomTrashText
 	text_end
 
 SSAnneCaptainsRoomSeasickBookText:
 	text_far _SSAnneCaptainsRoomSeasickBookText
+	text_end
+	
+SSAnneCaptainsRoomCaptainReturn:
+	text_far _SSAnneCaptainsRoomCaptainReturn
 	text_end

@@ -1415,9 +1415,9 @@ AdjustOAMBlockYPos2:
 	add b
 	cp 112
 	jr c, .skipSettingPreviousEntrysAttribute
-	dec hl
-	ld a, 160 ; bug, sets previous OAM entry's attribute
-	ld [hli], a
+;	dec hl
+	ld a, 160 ;PINK corrected bug, previously sets previous OAM entry's attribute
+;	ld [hli], a
 .skipSettingPreviousEntrysAttribute
 	ld [hl], a
 	add hl, de
@@ -1932,7 +1932,7 @@ _AnimationSlideMonOff:
 	sub 7
 ; This has the same problem as above, but it has no visible effect because
 ; the lower right tile is in the first column to slide off the screen.
-	cp $30
+	cp $31 ;PINK bug fix
 	ret c
 	ld a, ' '
 	ret

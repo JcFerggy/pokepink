@@ -61,3 +61,52 @@ _VictoryRoad3FCooltrainerF2AfterBattleText::
 	line "battles, you get"
 	cont "stronger!"
 	done
+
+_VictoryRoad3FCheif1Text::
+	text "I finally got"
+	line "ahead of you"
+	cont "for once!"
+	done
+	
+_VictoryRoad3FCheif1WaitedHereText::
+	text "After reading the"
+	line "notes left in"
+	cont "that mansion,"
+
+	para "I went searching"
+	line "for the strongest"
+	cont "#MON. I will"
+	cont "finally win!"
+	done
+
+_VictoryRoad3FCheif1DefeatedText::
+	text "I guess"
+	line "I have nothing"
+	cont "left to prove."
+	prompt
+
+_VictoryRoad3FCheif1VictoryText::
+	text "YES! I knew"
+	line "I was better!"
+
+	para "Try again next"
+	line "time, and maybe"
+	cont "you'll win."
+	prompt
+
+_VictoryRoad3FCheif1GoodLuckToYouText::
+	text "Well, <PLAYER>!"
+
+	para "I thought my ace"
+	line "would cinch the"
+	cont "win for me..."
+	
+	para "I hope you win"
+	line "the league and"
+	cont "become the "
+	cont "champion."
+	
+	para "Best of luck"
+	line "out there!"
+	done
+	

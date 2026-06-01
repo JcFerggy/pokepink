@@ -1,10 +1,10 @@
 SafariZoneCenterWildMons:
 	def_grass_wildmons 30 ; encounter rate
-	db 14, NIDORAN_M
-	db 36, NIDORAN_F
+	db 14, NIDORAN_F
+	db 36, NIDORAN_M
 	db 24, EXEGGCUTE
 	db 20, RHYHORN
-	db 23, NIDORINO
+	db 23, NIDORINA
 	db 27, PARASECT
 	db 27, PARAS
 	db 32, PARASECT

@@ -32,8 +32,9 @@ Route22Script_50ed6:
 Route22Script_50ee1:
 	ld a, OPP_RIVAL2
 	ld [wCurOpponent], a
-	ld a, [wRivalStarter]
-	add 7
+	;ld a, [wRivalStarter]
+	;add 9
+	ld a, 4
 	ld [wTrainerNo], a
 	ret
 

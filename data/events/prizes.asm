@@ -5,26 +5,26 @@ PrizeDifferentMenuPtrs:
 
 PrizeMenuMon1Entries:
 	db ABRA
-	db VULPIX
-	db WIGGLYTUFF
+	db GROWLITHE
+	db SEADRA
 	db "@"
 
 PrizeMenuMon1Cost:
-	bcd2 230
-	bcd2 1000
-	bcd2 2680
+	bcd2 200
+	bcd2 1100
+	bcd2 2460
 	db "@"
 
 PrizeMenuMon2Entries:
-	db SCYTHER
-	db PINSIR
+	db RAICHU
+	db DRAGONAIR
 	db PORYGON
 	db "@"
 
 PrizeMenuMon2Cost:
-	bcd2 6500
-	bcd2 6500
-	bcd2 9999
+	bcd2 3200
+	bcd2 5000
+	bcd2 9100
 	db "@"
 
 PrizeMenuTMsEntries:

@@ -1,35 +1,33 @@
-_Route6CooltrainerM1BattleText::
-	text "I'm doing this"
-	line "out of love."
-	cont "Leave me alone!"
+_Route6CooltrainerM1BattleText:: ;PINK Reverted anime references.
+	text "Who's there?"
+	line "Quit listening"
+	cont "in on us!"
 	done
 
 _Route6CooltrainerM1EndBattleText::
-	text "No,"
-	line "this can't be..."
+	text "I..."
+	line "just can't win!"
 	prompt
 
 _Route6CooltrainerM1AfterBattleText::
-	text "My love will leave"
-	line "me in disgust."
+	text "Whisper..."
+	line "whisper..."
 	done
 
 _Route6CooltrainerF1BattleText::
-	text "I'm training for"
-	line "my love. Don't"
-	cont "bother me!"
+	text "Excuse me! This"
+	line "is a private"
+	cont "conversation!"
 	done
 
 _Route6CooltrainerF1EndBattleText::
-	text "My"
-	line "textbook never..."
+	text "Ugh!"
+	line "I hate losing!"
 	prompt
 
 _Route6CooltrainerF1AfterBattleText::
-	text "Now I understand,"
-	line "#MON isn't"
-	cont "about calculated"
-	cont "numbers."
+	text "Whisper..."
+	line "whisper..."
 	done
 
 _Route6Youngster1BattleText::

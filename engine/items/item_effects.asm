@@ -66,7 +66,7 @@ ItemUsePtrTable:
 	dw ItemUseEvoStone   ; LEAF_STONE
 	dw ItemUseCardKey    ; CARD_KEY
 	dw UnusableItem      ; NUGGET
-	dw UnusableItem      ; ITEM_32
+	dw ItemUseEvoStone   ; LINKINGCABLE PINK was ITEM_32
 	dw ItemUsePokeDoll   ; POKE_DOLL
 	dw ItemUseMedicine   ; FULL_HEAL
 	dw ItemUseMedicine   ; REVIVE
@@ -2501,9 +2501,9 @@ ItemUseTMHM:
 	callfar IsThisPartyMonStarterPikachu
 	jr nc, .notTeachingThunderboltOrThunderToPikachu
 	ld a, [wCurItem]
-	cp TM_THUNDERBOLT ; are we teaching thunderbolt to the player pikachu?
+	cp TM_METRONOME ; are we teaching PSYWAVE to the player Clefairy?
 	jr z, .teachingThunderboltOrThunderToPlayerPikachu
-	cp TM_THUNDER ; are we teaching thunder then?
+	cp TM_PSYCHIC_M ; are we teaching PSYCHIC_M then?
 	jr nz, .notTeachingThunderboltOrThunderToPikachu
 .teachingThunderboltOrThunderToPlayerPikachu
 	ld a, $5
@@ -3106,10 +3106,18 @@ SendNewMonToBox:
 	jr nz, .movePPLoop
 	ld a, [wCurPartySpecies]
 	cp KADABRA
-	jr nz, .notKadabra
+	jr nz, .checkDratini
 	ld a, TWISTEDSPOON_GSC
 	ld [wBoxMon1CatchRate], a
-.notKadabra
+	jr .doneHeldItem
+
+.checkDratini
+	cp DRATINI
+	jr nz, .doneHeldItem
+	ld a, $BB ; PINK BLUE_SKY_MAIL
+	ld [wBoxMon1CatchRate], a
+	
+.doneHeldItem
 	ret
 
 ; checks if the tile in front of the player is a shore or water tile

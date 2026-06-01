@@ -21,6 +21,6 @@ Route13WildMons:
 	db 15, SLOWPOKE
 	db 15, SLOWPOKE
 	db 15, SLOWPOKE
-	db 15, SLOWBRO
-	db 20, SLOWBRO
+	db 15, POLIWHIRL
+	db 20, POLIWHIRL
 	end_water_wildmons

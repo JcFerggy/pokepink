@@ -90,8 +90,7 @@ CreditsTextPointers:
 	assert_table_length NUM_CRED_STRINGS
 
 CreditsText_Version:
-	db -6, "YELLOW VERSION"
-	next   "    STAFF@"
+	db -8, "PINK VERSION STAFF@"
 CreditsText_Tajiri:
 	db -6, "SATOSHI TAJIRI@"
 CreditsText_Oota:

@@ -1384,7 +1384,7 @@ wTrainerClass:: db
 
 wTrainerPicPointer:: dw
 
-	ds 1
+wTrainerPicBank:: db
 
 UNION
 wTempMoveNameBuffer:: ds MOVE_NAME_LENGTH
@@ -2205,12 +2205,15 @@ wMtMoonB2FCurScript:: db
 wSSAnne1FRoomsCurScript:: db
 wSSAnne2FRoomsCurScript:: db
 wRoute22CurScript:: db
-	ds 1
+wCeruleanTrashedHouseCurScript:: db
 wRedsHouse2FCurScript:: db
 wViridianMartCurScript:: db
 wRoute22GateCurScript:: db
 wCeruleanCityCurScript:: db
-	ds 7
+wUndergroundPathNorthSouthCurScript:: db
+wUndergroundPathWestEastCurScript:: db
+wSummerBeachHouseCurScript:: db
+	ds 4
 wSSAnneBowCurScript:: db
 wViridianForestCurScript:: db
 wMuseum1FCurScript:: db
@@ -2222,7 +2225,7 @@ wRoute21CurScript:: db
 wSafariZoneGateCurScript:: db
 wRockTunnelB1FCurScript:: db
 wRockTunnel1FCurScript:: db
-	ds 1
+wSafariZoneWestCurScript:: db ;PINK
 wRoute11CurScript:: db
 wRoute12CurScript:: db
 wRoute15CurScript:: db
@@ -2247,7 +2250,7 @@ wRoute8GateCurScript:: db
 	ds 1
 wCinnabarIslandCurScript:: db
 wPokemonMansion1FCurScript:: db
-	ds 1
+wCeladonMartRoofCurScript:: db
 wPokemonMansion2FCurScript:: db
 wPokemonMansion3FCurScript:: db
 wPokemonMansionB1FCurScript:: db

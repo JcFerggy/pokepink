@@ -77,25 +77,29 @@ BlkPacket_Pokedex:
 	ds 8, 0
 
 BlkPacket_Slots:
-	ATTR_BLK 5
-	ATTR_BLK_DATA %011, 1,1,0, 00,00, 19,11 ; "3" rows and top of screen: pal 1
+	ATTR_BLK 7
+	ATTR_BLK_DATA %011, 3,3,0, 00,00, 19,03 ; Credits, Pay Out
+	ATTR_BLK_DATA %011, 1,1,0, 00,02, 19,11 ; "3" rows and top of screen: pal 1
 	ATTR_BLK_DATA %011, 2,2,0, 00,04, 19,09 ; "2" rows: pal 2
 	ATTR_BLK_DATA %010, 3,3,0, 00,06, 19,07 ; "1" row: pal 3
+	ATTR_BLK_DATA %011, 3,3,0, 04,02, 15,11 ; Stars n stipes
 	ATTR_BLK_DATA %011, 0,0,0, 04,04, 15,09 ; slot reels: pal 0
 	ATTR_BLK_DATA %011, 0,0,0, 00,12, 19,17 ; message box: pal 0
 
 BlkPacket_Titlescreen:
-	ATTR_BLK 3
-	ATTR_BLK_DATA %011, 0,0,0, 00,00, 19,07 ; pokemon logo, version text: pal 0
-	ATTR_BLK_DATA %011, 2,2,0, 00,08, 19,17 ; pikachu, copyright text: pal 2
-	ATTR_BLK_DATA %010, 0,0,0, 09,08, 10,08 ; pika bubble: pal 0
+	ATTR_BLK 5
+	ATTR_BLK_DATA %011, 1,1,0, 00,00, 19,06 ; pokemon logo, version text: pal 0
+	ATTR_BLK_DATA %011, 0,0,0, 00,07, 19,17 ; Clefairy, copyright text: pal 2
+	ATTR_BLK_DATA %011, 2,2,0, 00,09, 19,10 ; PINK Clefairy's cheeks: pal 1
+	ATTR_BLK_DATA %011, 3,3,0, 09,14, 10,15 ; PINK Clefairy's mouth: pal 1
+	ATTR_BLK_DATA %010, 1,1,0, 07,07, 12,08 ; Pipi bubble: pal 0
 	ds 12, 0
 
 BlkPacket_NidorinoIntro:
 	ATTR_BLK 3
-	ATTR_BLK_DATA %011, 1,1,0, 00,00, 19,03 ; upper black bar: pal 1
-	ATTR_BLK_DATA %011, 0,0,0, 00,04, 19,13 ; letterbox: pal 0
-	ATTR_BLK_DATA %011, 1,1,0, 00,14, 19,17 ; lower black bar: pal 1
+	ATTR_BLK_DATA %111, 1,1,0, 00,07, 19,07 ; falling stars (left): pal 1, GameFreak logo: pal 0
+	ATTR_BLK_DATA %010, 2,2,0, 00,09, 19,09 ; falling stars (middle): pal 2
+	ATTR_BLK_DATA %011, 3,3,0, 00,11, 19,11 ; falling stars (right): pal 3
 	ds 12, 0
 
 BlkPacket_PartyMenu:
@@ -142,13 +146,14 @@ PalPacket_Black:              PAL_SET PAL_BLACK, PAL_BLACK, PAL_BLACK, PAL_BLACK
 PalPacket_TownMap:            PAL_SET PAL_TOWNMAP, 0, 0, 0
 PalPacket_Pokedex:            PAL_SET PAL_BROWNMON, 0, 0, 0
 PalPacket_Slots:              PAL_SET PAL_SLOTS1, PAL_SLOTS2, PAL_SLOTS3, PAL_SLOTS4
-PalPacket_Titlescreen:        PAL_SET PAL_LOGO2, PAL_LOGO1, PAL_MEWMON, PAL_PURPLEMON
+PalPacket_Titlescreen:        PAL_SET PAL_LOGO1, PAL_LOGO2, PAL_PIKACHU_PORTRAIT, PAL_PIKACHUS_BEACH_TITLE
 PalPacket_TrainerCard:        PAL_SET PAL_MEWMON, PAL_BADGE, PAL_REDMON, PAL_YELLOWMON
 PalPacket_Generic:            PAL_SET PAL_MEWMON, 0, 0, 0
-PalPacket_NidorinoIntro:      PAL_SET PAL_PURPLEMON, PAL_BLACK, 0, 0
+PalPacket_NidorinoIntro:      PAL_SET PAL_LOGO1, PAL_BLACK, 0, 0
 PalPacket_GameFreakIntro:     PAL_SET PAL_GAMEFREAK, PAL_REDMON, PAL_VIRIDIAN, PAL_BLUEMON
 PalPacket_PikachusBeach:      PAL_SET PAL_PIKACHUS_BEACH, PAL_PIKACHUS_BEACH, PAL_PIKACHUS_BEACH, PAL_PIKACHUS_BEACH
-PalPacket_PikachusBeachTitle: PAL_SET PAL_PIKACHUS_BEACH, PAL_PIKACHUS_BEACH_TITLE, PAL_PIKACHUS_BEACH, PAL_PIKACHUS_BEACH
+PalPacket_PikachusBeachTitle: PAL_SET PAL_PIKACHUS_BEACH, PAL_PIKACHUS_BEACH_TITLE, PAL_LOGO1, PAL_PIKACHU_PORTRAIT
+PalPacket_Clefairy: 		  PAL_SET PAL_PINKMON, PAL_PIKACHUS_BEACH_TITLE, PAL_LOGO1, PAL_PIKACHU_PORTRAIT
 
 PalTrnPacket:  PAL_TRN
 MltReq1Packet: MLT_REQ 1

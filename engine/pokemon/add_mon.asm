@@ -35,11 +35,22 @@ _AddPartyMon::
 	ldh a, [hNewPartyLength]
 	dec a
 	call SkipFixedLengthTextEntries
-	ld d, h
+	ld d, h ;PINK New Code start
 	ld e, l
+
+	ld a, [wCurPartySpecies]
+	cp MEW
+	jr nz, .usePlayerOT
+
+	ld hl, MewOTName
+	jr .copyOT
+
+.usePlayerOT
 	ld hl, wPlayerName
+
+.copyOT
 	ld bc, NAME_LENGTH
-	call CopyData
+	call CopyData ;New code end
 	ld a, [wMonDataLocation]
 	and a
 	jr nz, .skipNaming
@@ -169,13 +180,22 @@ _AddPartyMon::
 	ld [de], a
 	inc de
 	ld a, [hli]       ; catch rate (held item in gen 2)
-	ld [de], a
+	ld [de], a		;PINK New code check for DRATINI
 	ld a, [wCurPartySpecies]
+
 	cp KADABRA
-	jr nz, .notKadabra
+	jr nz, .checkDratini
 	ld a, TWISTEDSPOON_GSC
 	ld [de], a
-.notKadabra
+	jr .doneHeldItem
+
+.checkDratini
+	cp DRATINI
+	jr nz, .doneHeldItem
+	ld a, $BB ; PINK BLUE_SKY_MAIL
+	ld [de], a
+
+.doneHeldItem	;PINK End of new code
 	ld hl, wMonHMoves
 	ld a, [hli]
 	inc de
@@ -198,12 +218,32 @@ _AddPartyMon::
 	ld [wLearningMovesFromDayCare], a
 	predef WriteMonMoves
 	pop de
-	ld a, [wPlayerID]  ; set trainer ID to player ID
+	ld a, [wCurPartySpecies] ;PINK New code start
+	cp MEW
+	jr nz, .normalTrainerID
+
+; GF Mew = 22796 = $590C == Reverse the bytes
+	ld a, $59
 	inc de
 	ld [de], a
+
+	ld a, $0C
+	inc de
+	ld [de], a
+
+	jr .trainerIDDone
+
+
+.normalTrainerID
+	ld a, [wPlayerID]
+	inc de
+	ld [de], a
+
 	ld a, [wPlayerID + 1]
 	inc de
 	ld [de], a
+
+.trainerIDDone ;New code end
 	push de
 	ld a, [wCurEnemyLevel]
 	ld d, a
@@ -250,6 +290,9 @@ _AddPartyMon::
 .done
 	scf
 	ret
+	
+MewOTName: ;New code
+	db "GF@@@@@@@" ; pad to NAME_LENGTH
 
 LoadMovePPs:
 	call GetPredefRegisters

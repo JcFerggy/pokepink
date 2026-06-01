@@ -61,14 +61,14 @@ TrainerNamePointers:
 .SuperNerdName:     db "SUPER NERD@"
 .BurglarName:       db "BURGLAR@"
 .EngineerName:      db "ENGINEER@"
-.UnusedJugglerName: db "JUGGLER@"
+.UnusedJugglerName: db "IMPOSTER@";PINK
 .SwimmerName:       db "SWIMMER@"
 .BeautyName:        db "BEAUTY@"
 .RockerName:        db "ROCKER@"
 .JugglerName:       db "JUGGLER@"
 .BlackbeltName:     db "BLACKBELT@"
 .ProfOakName:       db "PROF.OAK@"
-.ChiefName:         db "CHIEF@"
+.ChiefName:         db "BUSYBODY@";PINK
 .ScientistName:     db "SCIENTIST@"
 .RocketName:        db "ROCKET@"
 .CooltrainerMName:  db "COOLTRAINER♂@"

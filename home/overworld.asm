@@ -1326,7 +1326,7 @@ CheckForTilePairCollisions::
 	jr .retry
 .currentTileMatchesFirstInPair
 	inc hl
-	ld a, [hl]
+	ld a, [hli] ;PINK proformance fix
 	cp c
 	jr z, .foundMatch
 	jr .tilePairCollisionLoop

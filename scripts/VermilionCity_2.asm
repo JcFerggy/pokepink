@@ -15,13 +15,13 @@ VermilionCityPrintOfficerJennyText::
 	ld a, [wCurrentMenuItem]
 	and a
 	jr nz, .asm_f1a62
-	ld a, SQUIRTLE
+	ld a, CHARMANDER
 	ld [wNamedObjectIndex], a
 	ld [wCurPartySpecies], a
 	call GetMonName
 	ld a, $1
 	ld [wDoNotWaitForButtonPressAfterDisplayingText], a
-	lb bc, SQUIRTLE, 10
+	lb bc, CHARMANDER, 10
 	call GivePokemon
 	ret nc
 	ld a, [wAddedToParty]

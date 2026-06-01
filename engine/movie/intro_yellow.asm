@@ -57,42 +57,111 @@ PlayIntroScene:
 	ret
 
 Func_f98a2:
-	ld a, [wShadowOAMSprite08Attributes]
+	ld a, [wShadowOAMSprite04Attributes]
 	or $1
-	ld [wShadowOAMSprite08Attributes], a
+	ld [wShadowOAMSprite04Attributes], a
+	ld a, [wShadowOAMSprite06Attributes]
+	or $1
+	ld [wShadowOAMSprite06Attributes], a
+	ld a, [wShadowOAMSprite07Attributes]
+	or $1
+	ld [wShadowOAMSprite07Attributes], a
+	ld a, [wShadowOAMSprite10Attributes]
+	or $1
+	ld [wShadowOAMSprite10Attributes], a
 	ld a, [wShadowOAMSprite14Attributes]
 	or $1
 	ld [wShadowOAMSprite14Attributes], a
 	ld a, [wShadowOAMSprite16Attributes]
 	or $1
 	ld [wShadowOAMSprite16Attributes], a
-	ld a, [wShadowOAMSprite18Attributes]
-	or $1
-	ld [wShadowOAMSprite18Attributes], a
-	ld a, [wShadowOAMSprite19Attributes]
-	or $1
-	ld [wShadowOAMSprite19Attributes], a
+	;ld a, [wShadowOAMSprite17Attributes]
+	;or $1
+	;ld [wShadowOAMSprite17Attributes], a
+	;ld a, [wShadowOAMSprite18Attributes]
+	;or $1
+	;ld [wShadowOAMSprite18Attributes], a
+	;ld a, [wShadowOAMSprite19Attributes]
+	;or $1
+	;ld [wShadowOAMSprite19Attributes], a
+	;ld a, [wShadowOAMSprite16Attributes]
+	;or $1
+	;ld [wShadowOAMSprite16Attributes], a
 	ret
 
 Func_f98cb:
-	ld a, [wShadowOAMSprite18Attributes]
+	ld a, [wShadowOAMSprite01Attributes]
 	or $1
-	ld [wShadowOAMSprite18Attributes], a
+	ld [wShadowOAMSprite01Attributes], a
+	ld a, [wShadowOAMSprite02Attributes]
+	or $1
+	ld [wShadowOAMSprite02Attributes], a
+	ld a, [wShadowOAMSprite03Attributes]
+	or $1
+	ld [wShadowOAMSprite03Attributes], a
+	ld a, [wShadowOAMSprite04Attributes]
+	or $1
+	ld [wShadowOAMSprite04Attributes], a
+	ld a, [wShadowOAMSprite06Attributes]
+	or $1
+	ld [wShadowOAMSprite06Attributes], a
+	ld a, [wShadowOAMSprite07Attributes]
+	or $1
+	ld [wShadowOAMSprite07Attributes], a
+	ld a, [wShadowOAMSprite08Attributes]
+	or $1
+	ld [wShadowOAMSprite08Attributes], a
+	ld a, [wShadowOAMSprite09Attributes]
+	or $1
+	ld [wShadowOAMSprite09Attributes], a
+	ld a, [wShadowOAMSprite10Attributes]
+	or $1
+	ld [wShadowOAMSprite10Attributes], a
+	ld a, [wShadowOAMSprite11Attributes]
+	or $1
+	ld [wShadowOAMSprite11Attributes], a
+	ld a, [wShadowOAMSprite12Attributes]
+	or $1
+	ld [wShadowOAMSprite12Attributes], a
+	ld a, [wShadowOAMSprite13Attributes]
+	or $1
+	ld [wShadowOAMSprite13Attributes], a
+	ld a, [wShadowOAMSprite16Attributes]
+	or $1
+	ld [wShadowOAMSprite16Attributes], a
+	ld a, [wShadowOAMSprite17Attributes]
+	or $1
+	ld [wShadowOAMSprite17Attributes], a
 	ld a, [wShadowOAMSprite19Attributes]
 	or $1
 	ld [wShadowOAMSprite19Attributes], a
-	ld a, [wShadowOAMSprite20Attributes]
+	ld a, [wShadowOAMSprite21Attributes]
 	or $1
-	ld [wShadowOAMSprite20Attributes], a
+	ld [wShadowOAMSprite21Attributes], a
+	ld a, [wShadowOAMSprite26Attributes]
+	or $1
+	ld [wShadowOAMSprite26Attributes], a
 	ld a, [wShadowOAMSprite25Attributes]
 	or $1
 	ld [wShadowOAMSprite25Attributes], a
 	ld a, [wShadowOAMSprite26Attributes]
 	or $1
 	ld [wShadowOAMSprite26Attributes], a
+	ld a, [wShadowOAMSprite27Attributes]
+	or $1
+	ld [wShadowOAMSprite27Attributes], a
 	ld a, [wShadowOAMSprite28Attributes]
 	or $1
 	ld [wShadowOAMSprite28Attributes], a
+	;ld a, [wShadowOAMSprite32Attributes]
+	;or $1
+	;ld [wShadowOAMSprite32Attributes], a
+	;ld a, [wShadowOAMSprite33Attributes]
+	;or $1
+	;ld [wShadowOAMSprite33Attributes], a
+	;ld a, [wShadowOAMSprite34Attributes]
+	;or $1
+	;ld [wShadowOAMSprite34Attributes], a
 	ret
 
 Func_f98fc:
@@ -305,7 +374,7 @@ YellowIntroScene4:
 	xor a
 	ldh [hLCDCPointer], a
 	call Func_f9e5f
-	lb de, $58, $58
+	lb de, $68, $54
 	ld a, $2
 	call YellowIntro_SpawnAnimatedObjectAndSavePointer
 	xor a
@@ -389,7 +458,7 @@ YellowIntroScene8:
 	xor a
 	ldh [hLCDCPointer], a
 	call Func_f9e5f
-	lb de, $58, $58
+	lb de, $58, $54
 	ld a, $3
 	call YellowIntro_SpawnAnimatedObjectAndSavePointer
 	xor a
@@ -516,7 +585,7 @@ YellowIntroScene12:
 	call Bank3E_FillMemory
 
 	; paste 8x12 graphic into vBGMap0 at (5, 6) starting at tile 4, skipping 4 vtiles at the end of each row
-	ld hl, $98c5
+	ld hl, $98c4
 	ld de, $20
 	ld a, $4
 	ld b, 8
@@ -534,15 +603,18 @@ YellowIntroScene12:
 	dec b
 	jr nz, .row
 
-	ld hl, $98c4 ; (4, 6)
-	ld [hl], $3
-	ld hl, $98e4 ; (4, 7)
-	ld [hl], $74
-	ld hl, $99a5 ; (5, 5)
-	ld [hl], $0
-	lb de, $60, $58
+	;ld hl, $98c4 ; (4, 6)
+	;ld [hl], $3
+	;ld hl, $98e4 ; (4, 7)
+	;ld [hl], $74
+	;ld hl, $99a5 ; (5, 5)
+	;ld [hl], $0
+	lb de, $68, $58
 	ld a, $9
 	call YellowIntro_SpawnAnimatedObjectAndSavePointer
+	lb de, $60, $58
+	ld a, $b
+	call SpawnAnimatedObject
 	xor a
 	call Func_f9e9a
 	call YellowIntro_SetTimerFor128Frames
@@ -928,17 +1000,18 @@ YellowIntro_BlankPalettes:
 	ret
 
 YellowIntro_AnimatedObjectSpawnStateData:
-	db $00, $00, $00
-	db $01, $01, $00
-	db $02, $01, $00
-	db $03, $01, $00
-	db $04, $02, $00
-	db $05, $03, $00
-	db $06, $04, $00
+	db $00, $00, $02
+	db $01, $01, $02
+	db $02, $01, $03
+	db $03, $01, $02
+	db $04, $02, $03
+	db $05, $03, $02
+	db $06, $04, $03
 	db $07, $01, $00
 	db $08, $05, $00
 	db $09, $01, $00
 	db $0a, $01, $00
+	db $0b, $01, $00
 
 YellowIntro_AnimatedObjectJumptable:
 	dw Func_fa007

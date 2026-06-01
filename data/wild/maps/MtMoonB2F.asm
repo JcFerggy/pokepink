@@ -7,9 +7,9 @@ MtMoonB2FWildMons:
 	db 11, ZUBAT
 	db 12, ZUBAT
 	db 13, ZUBAT
-	db  9, CLEFAIRY
-	db 11, CLEFAIRY
-	db 13, CLEFAIRY
+	db  9, PARAS
+	db 11, PARAS
+	db 13, PARASECT
 	end_grass_wildmons
 
 	def_water_wildmons 0 ; encounter rate

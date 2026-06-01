@@ -68,6 +68,7 @@ HallOfFameDefaultScript:
 	call StartSimulatingJoypadStates
 	ld a, SCRIPT_HALLOFFAME_OAK_CONGRATULATIONS
 	ld [wHallOfFameCurScript], a
+	predef HealParty ;PINK heal party.
 	ret
 
 HallOfFameEntryMovement:

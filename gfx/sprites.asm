@@ -67,7 +67,7 @@ MomSprite::              INCBIN "gfx/sprites/mom.2bpp"
 BaldingGuySprite::       INCBIN "gfx/sprites/balding_guy.2bpp"
 LittleBoySprite::        INCBIN "gfx/sprites/little_boy.2bpp"
 GameboyKidSprite::       INCBIN "gfx/sprites/gameboy_kid.2bpp"
-FairySprite::            INCBIN "gfx/sprites/fairy.2bpp"
+FairySprite::            INCBIN "gfx/sprites/pikachu.2bpp" ;PINK Swap sprites.
 AgathaSprite::           INCBIN "gfx/sprites/agatha.2bpp"
 BrunoSprite::            INCBIN "gfx/sprites/bruno.2bpp"
 LoreleiSprite::          INCBIN "gfx/sprites/lorelei.2bpp"
@@ -77,7 +77,7 @@ SeelSprite::             INCBIN "gfx/sprites/seel.2bpp"
 SECTION "NPC Sprites 3", ROMX
 
 OfficerJennySprite::     INCBIN "gfx/sprites/officer_jenny.2bpp"
-PikachuSprite::          INCBIN "gfx/sprites/pikachu.2bpp"
+PikachuSprite::          INCBIN "gfx/sprites/fairy.2bpp" ;PINK Swap sprites.
 SandshrewSprite::        INCBIN "gfx/sprites/sandshrew.2bpp"
 OddishSprite::           INCBIN "gfx/sprites/oddish.2bpp"
 BulbasaurSprite::        INCBIN "gfx/sprites/bulbasaur.2bpp"
@@ -87,3 +87,5 @@ ChanseySprite::          INCBIN "gfx/sprites/chansey.2bpp"
 SurfingPikachuSprite::   INCBIN "gfx/sprites/surfing_pikachu.2bpp"
 JessieSprite::           INCBIN "gfx/sprites/jessie.2bpp"
 JamesSprite::            INCBIN "gfx/sprites/james.2bpp"
+BlueMangaSprite::            INCBIN "gfx/sprites/manga_blue.2bpp"
+YellowMangaSprite::            INCBIN "gfx/sprites/manga_yellow.2bpp"

@@ -12,7 +12,7 @@ TrainerNames::
 	li "BIKER"
 	li "BURGLAR"
 	li "ENGINEER"
-	li "JUGGLER"
+	li "IMPOSTER";PINK
 	li "FISHERMAN"
 	li "SWIMMER"
 	li "CUE BALL"
@@ -26,7 +26,7 @@ TrainerNames::
 	li "BLACKBELT"
 	li "RIVAL1"
 	li "PROF.OAK"
-	li "CHIEF"
+	li "BUSYBODY";CHEIF ;PINK
 	li "SCIENTIST"
 	li "GIOVANNI"
 	li "ROCKET"

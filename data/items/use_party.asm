@@ -21,6 +21,7 @@ UsableItems_PartyMenu:
 	db CALCIUM
 	db RARE_CANDY
 	db LEAF_STONE
+	db ITEM_32 ;PINK LINKINGCABLE
 	db FULL_HEAL
 	db REVIVE
 	db MAX_REVIVE

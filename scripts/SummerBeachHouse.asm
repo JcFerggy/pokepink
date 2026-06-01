@@ -1,22 +1,111 @@
 SummerBeachHouse_Script:
 	call EnableAutoTextBoxDrawing
+	ld hl, SummerBeachHouseTrainerHeaders
+	ld de, SummerBeachHouse_ScriptPointers
+	ld a, [wSummerBeachHouseCurScript]
+	call ExecuteCurMapScriptInTable
+	ld [wSummerBeachHouseCurScript], a
 	ret
+	
+SummerBeachHouse_ScriptPointers:
+	def_script_pointers
+	dw_const CheckFightingMapTrainers,              SCRIPT_SUMMERBEACHHOUSE_DEFAULT
+	dw_const DisplayEnemyTrainerTextAndStartBattle, SCRIPT_SUMMERBEACHHOUSE_START_BATTLE
+	dw_const EndTrainerBattle,                      SCRIPT_SUMMERBEACHHOUSE_END_BATTLE
 
 SummerBeachHouse_TextPointers:
 	def_text_pointers
+	dw_const SummerBeachHouseImposterText, TEXT_SUMMERBEACHHOUSE_IMPOSTER
+	dw_const SummerBeachHouseImposterText, TEXT_SUMMERBEACHHOUSE_YELLOW
 	dw_const SummerBeachHouseSurfinDudeText, TEXT_SUMMERBEACHHOUSE_SURFINDUDE
 	dw_const SummerBeachHousePikachuText,    TEXT_SUMMERBEACHHOUSE_PIKACHU
+	dw_const SummerBeachHouseFairyText,    TEXT_SUMMERBEACHHOUSE_FAIRY
 	dw_const SummerBeachHousePoster1Text,    TEXT_SUMMERBEACHHOUSE_POSTER1
 	dw_const SummerBeachHousePoster2Text,    TEXT_SUMMERBEACHHOUSE_POSTER2
 	dw_const SummerBeachHousePoster3Text,    TEXT_SUMMERBEACHHOUSE_POSTER3
 	dw_const SummerBeachHousePrinterText,    TEXT_SUMMERBEACHHOUSE_PRINTER
+	
+SummerBeachHouseTrainerHeaders:
+	def_trainers
+SummerBeachHouseTrainerHeader0:
+	trainer EVENT_BEAT_SUMMERBEACHHOUSE_TRAINER_0, 1, SummerBeachHouseImposterBattleText, SummerBeachHouseImposterEndBattleText, SummerBeachHouseImposterAfterBattleText
+	db -1 ; end
+
+SummerBeachHouseImposterText:
+	text_asm
+	CheckEvent EVENT_BEAT_SUMMERBEACHHOUSE_TRAINER_0
+	jr nz, .beatenAleady
+	call GBFadeOutToBlack
+	ld a, TOGGLE_SUMMER_BEACH_HOUSE_IMPOSTER
+	ld [wToggleableObjectIndex], a
+	predef HideObject
+	ld a, TOGGLE_SUMMER_BEACH_HOUSE_YELLOW
+	ld [wToggleableObjectIndex], a
+	predef ShowObject
+	
+	
+	ld hl, .SummerBeachHouseBattleCoords
+	call ArePlayerCoordsInArray
+	ld a, [wCoordIndex]
+	ld [wSavedCoordIndex], a
+	
+	cp 1
+	jr z, .movement1
+	cp 2
+	jr z, .movement2
+	cp 3
+	jr z, .movement3
+	jr .toggleYellow
+.movement1
+	ld a, SUMMERBEACHHOUSE_YELLOW
+	ldh [hSpriteIndex], a
+	ld a, SPRITE_FACING_UP
+	ldh [hSpriteFacingDirection], a
+	call SetSpriteFacingDirectionAndDelay
+	jr .toggleYellow
+	
+.movement2
+	ld a, SUMMERBEACHHOUSE_YELLOW
+	ldh [hSpriteIndex], a
+	ld a, SPRITE_FACING_LEFT
+	ldh [hSpriteFacingDirection], a
+	call SetSpriteFacingDirectionAndDelay
+	jr .toggleYellow
+	
+.SummerBeachHouseBattleCoords
+	dbmapcoord 8,  3
+	dbmapcoord 7,  4
+	dbmapcoord 8,  5
+	db -1 ; end
+
+.movement3
+	ld a, SUMMERBEACHHOUSE_YELLOW
+	ldh [hSpriteIndex], a
+	ld a, SPRITE_FACING_DOWN
+	ldh [hSpriteFacingDirection], a
+	call SetSpriteFacingDirectionAndDelay
+
+.toggleYellow
+	ld a, SUMMERBEACHHOUSE_YELLOW
+	ldh [hSpriteIndex], a
+	;call MoveSprite
+	call UpdateSprites
+	call Delay3
+	call GBFadeInFromBlack
+.beatenAleady
+	ld hl, SummerBeachHouseTrainerHeader0
+	jr SummerBeachHouseTalkToTrainer
+	
+SummerBeachHouseTalkToTrainer:
+	call TalkToTrainer
+	jp TextScriptEnd
 
 SummerBeachHouseSurfinDudeText:
 	text_asm
 	ld a, [wd471]
 	vc_patch Bypass_need_Pikachu_with_Surf_for_minigame
 IF DEF (_YELLOW_VC)
-	bit 7, a
+	bit 7, a ;PINK Force Minigame for Clefairy
 ELSE
 	bit 6, a
 ENDC
@@ -64,18 +153,43 @@ ENDC
 .SurfinDudeText4
 	text_far _SummerBeachHouseSurfinDudeText4
 	text_end
+	
+SummerBeachHouseImposterBattleText:
+	text_far _SummerBeachHouseImposterBattleText
+	text_end
+
+SummerBeachHouseImposterEndBattleText:
+	text_far _SummerBeachHouseImposterEndBattleText
+	text_end
+
+SummerBeachHouseImposterAfterBattleText:
+	text_far _SummerBeachHouseImposterAfterBattleText
+	text_end
 
 SummerBeachHousePikachuText:
 	text_asm
 	ld hl, .SummerBeachHousePikachuText
 	call PrintText
-	ld a, PIKACHU
+	ld a, CLEFAIRY
 	call PlayCry
 	call WaitForSoundToFinish
 	jp TextScriptEnd
 
 .SummerBeachHousePikachuText
 	text_far _SummerBeachHousePikachuText
+	text_end
+	
+SummerBeachHouseFairyText:
+	text_asm
+	ld hl, .SummerBeachHouseFairyText
+	call PrintText
+	ld a, PIKACHU
+	call PlayCry
+	call WaitForSoundToFinish
+	jp TextScriptEnd
+
+.SummerBeachHouseFairyText
+	text_far _SummerBeachHouseFairyText
 	text_end
 
 SummerBeachHousePoster1Text:
@@ -138,7 +252,7 @@ SummerBeachHousePrinterText:
 	ld [wDoNotWaitForButtonPressAfterDisplayingText], a
 	ld a, [wd471]
 	vc_patch Bypass_need_Pikachu_with_Surf_for_high_score
-IF DEF(_YELLOW_VC)
+IF DEF(_YELLOW_VC) ;PINK Force Minigame for Clefairy
 	bit 7, a
 ELSE
 	bit 6, a

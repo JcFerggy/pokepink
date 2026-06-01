@@ -1,12 +1,171 @@
 CeruleanTrashedHouse_Script:
 	call EnableAutoTextBoxDrawing
+	ld hl, CeruleanTrashedHouseTrainerHeaders
+	ld de, CeruleanTrashedHouse_ScriptPointers
+	ld a, [wCeruleanTrashedHouseCurScript]
+	call ExecuteCurMapScriptInTable
+	ld [wCeruleanTrashedHouseCurScript], a
 	ret
+	
+CeruleanTrashedHouse_ScriptPointers:
+	def_script_pointers
+	dw_const CheckFightingMapTrainers,              SCRIPT_CERULEANTRASHEDHOUSE_DEFAULT
+	dw_const DisplayEnemyTrainerTextAndStartBattle, SCRIPT_CERULEANTRASHEDHOUSE_START_BATTLE
+	dw_const EndTrainerBattle,                      SCRIPT_CERULEANTRASHEDHOUSE_END_BATTLE
 
 CeruleanTrashedHouse_TextPointers:
 	def_text_pointers
+	dw_const CeruleanTrashedHouseChief1Text, TEXT_CERULEANTRASHEDHOUSE_CHIEF1
+	dw_const CeruleanTrashedHouseChief2Text, TEXT_CERULEANTRASHEDHOUSE_CHIEF2
+	dw_const CeruleanTrashedHouseChief3Text, TEXT_CERULEANTRASHEDHOUSE_CHIEF3
+	dw_const CeruleanTrashedHouseChief4Text, TEXT_CERULEANTRASHEDHOUSE_CHIEF4
+	dw_const CeruleanTrashedHouseChief5Text, TEXT_CERULEANTRASHEDHOUSE_CHIEF5
+	dw_const CeruleanTrashedHouseChief6Text, TEXT_CERULEANTRASHEDHOUSE_CHIEF6
+	dw_const CeruleanTrashedHouseChief7Text, TEXT_CERULEANTRASHEDHOUSE_CHIEF7
 	dw_const CeruleanTrashedHouseFishingGuruText, TEXT_CERULEANTRASHEDHOUSE_FISHING_GURU
 	dw_const CeruleanTrashedHouseGirlText,        TEXT_CERULEANTRASHEDHOUSE_GIRL
 	dw_const CeruleanTrashedHouseWallHoleText,    TEXT_CERULEANTRASHEDHOUSE_WALL_HOLE
+	
+CeruleanTrashedHouseTrainerHeaders:
+	def_trainers
+CeruleanTrashedHouseTrainerHeader0:
+	trainer EVENT_BEAT_CERULEANTRASHEDHOUSE_TRAINER_0, 5, CeruleanTrashedHouseChief1BattleText, CeruleanTrashedHouseChief1EndBattleText, CeruleanTrashedHouseChief1AfterBattleText
+CeruleanTrashedHouseTrainerHeader1:
+	trainer EVENT_BEAT_CERULEANTRASHEDHOUSE_TRAINER_1, 5, CeruleanTrashedHouseChief2BattleText, CeruleanTrashedHouseChief2EndBattleText, CeruleanTrashedHouseChief2AfterBattleText
+CeruleanTrashedHouseTrainerHeader2:
+	trainer EVENT_BEAT_CERULEANTRASHEDHOUSE_TRAINER_2, 5, CeruleanTrashedHouseChief3BattleText, CeruleanTrashedHouseChief3EndBattleText, CeruleanTrashedHouseChief3AfterBattleText
+CeruleanTrashedHouseTrainerHeader3:
+	trainer EVENT_BEAT_CERULEANTRASHEDHOUSE_TRAINER_3, 5, CeruleanTrashedHouseChief4BattleText, CeruleanTrashedHouseChief4EndBattleText, CeruleanTrashedHouseChief4AfterBattleText
+CeruleanTrashedHouseTrainerHeader4:
+	trainer EVENT_BEAT_CERULEANTRASHEDHOUSE_TRAINER_4, 5, CeruleanTrashedHouseChief5BattleText, CeruleanTrashedHouseChief5EndBattleText, CeruleanTrashedHouseChief5AfterBattleText
+CeruleanTrashedHouseTrainerHeader5:
+	trainer EVENT_BEAT_CERULEANTRASHEDHOUSE_TRAINER_5, 5, CeruleanTrashedHouseChief6BattleText, CeruleanTrashedHouseChief6EndBattleText, CeruleanTrashedHouseChief6AfterBattleText
+CeruleanTrashedHouseTrainerHeader6:
+	trainer EVENT_BEAT_CERULEANTRASHEDHOUSE_TRAINER_6, 5, CeruleanTrashedHouseChief7BattleText, CeruleanTrashedHouseChief7EndBattleText, CeruleanTrashedHouseChief7AfterBattleText
+	db -1 ; end
+	
+CeruleanTrashedHouseChief1Text:
+	text_asm
+	ld hl, CeruleanTrashedHouseTrainerHeader0
+	jr CeruleanTrashedHouseTalkToTrainer
+
+CeruleanTrashedHouseChief2Text:
+	text_asm
+	ld hl, CeruleanTrashedHouseTrainerHeader1
+	jr CeruleanTrashedHouseTalkToTrainer
+
+CeruleanTrashedHouseChief3Text:
+	text_asm
+	ld hl, CeruleanTrashedHouseTrainerHeader2
+	jr CeruleanTrashedHouseTalkToTrainer
+
+CeruleanTrashedHouseChief4Text:
+	text_asm
+	ld hl, CeruleanTrashedHouseTrainerHeader3
+	jr CeruleanTrashedHouseTalkToTrainer
+
+CeruleanTrashedHouseChief5Text:
+	text_asm
+	ld hl, CeruleanTrashedHouseTrainerHeader4
+	jr CeruleanTrashedHouseTalkToTrainer
+
+CeruleanTrashedHouseChief6Text:
+	text_asm
+	ld hl, CeruleanTrashedHouseTrainerHeader5
+	jr CeruleanTrashedHouseTalkToTrainer
+	
+CeruleanTrashedHouseChief7Text:
+	text_asm
+	ld hl, CeruleanTrashedHouseTrainerHeader6
+	jr CeruleanTrashedHouseTalkToTrainer
+	
+CeruleanTrashedHouseTalkToTrainer:
+	call TalkToTrainer
+	jp TextScriptEnd
+
+CeruleanTrashedHouseChief1BattleText:
+	text_far _CeruleanTrashedHouseChief1BattleText
+	text_end
+
+CeruleanTrashedHouseChief1EndBattleText:
+	text_far _CeruleanTrashedHouseChief1EndBattleText
+	text_end
+
+CeruleanTrashedHouseChief1AfterBattleText:
+	text_far _CeruleanTrashedHouseChief1AfterBattleText
+	text_end
+
+CeruleanTrashedHouseChief2BattleText:
+	text_far _CeruleanTrashedHouseChief2BattleText
+	text_end
+
+CeruleanTrashedHouseChief2EndBattleText:
+	text_far _CeruleanTrashedHouseChief2EndBattleText
+	text_end
+
+CeruleanTrashedHouseChief2AfterBattleText:
+	text_far _CeruleanTrashedHouseChief2AfterBattleText
+	text_end
+
+CeruleanTrashedHouseChief3BattleText:
+	text_far _CeruleanTrashedHouseChief3BattleText
+	text_end
+
+CeruleanTrashedHouseChief3EndBattleText:
+	text_far _CeruleanTrashedHouseChief3EndBattleText
+	text_end
+
+CeruleanTrashedHouseChief3AfterBattleText:
+	text_far _CeruleanTrashedHouseChief3AfterBattleText
+	text_end
+
+CeruleanTrashedHouseChief4BattleText:
+	text_far _CeruleanTrashedHouseChief4BattleText
+	text_end
+
+CeruleanTrashedHouseChief4EndBattleText:
+	text_far _CeruleanTrashedHouseChief4EndBattleText
+	text_end
+
+CeruleanTrashedHouseChief4AfterBattleText:
+	text_far _CeruleanTrashedHouseChief4AfterBattleText
+	text_end
+
+CeruleanTrashedHouseChief5BattleText:
+	text_far _CeruleanTrashedHouseChief5BattleText
+	text_end
+
+CeruleanTrashedHouseChief5EndBattleText:
+	text_far _CeruleanTrashedHouseChief5EndBattleText
+	text_end
+
+CeruleanTrashedHouseChief5AfterBattleText:
+	text_far _CeruleanTrashedHouseChief5AfterBattleText
+	text_end
+
+CeruleanTrashedHouseChief6BattleText:
+	text_far _CeruleanTrashedHouseChief6BattleText
+	text_end
+
+CeruleanTrashedHouseChief6EndBattleText:
+	text_far _CeruleanTrashedHouseChief6EndBattleText
+	text_end
+
+CeruleanTrashedHouseChief6AfterBattleText:
+	text_far _CeruleanTrashedHouseChief6AfterBattleText
+	text_end
+	
+CeruleanTrashedHouseChief7BattleText:
+	text_far _CeruleanTrashedHouseChief7BattleText
+	text_end
+
+CeruleanTrashedHouseChief7EndBattleText:
+	text_far _CeruleanTrashedHouseChief7EndBattleText
+	text_end
+
+CeruleanTrashedHouseChief7AfterBattleText:
+	text_far _CeruleanTrashedHouseChief7AfterBattleText
+	text_end
 
 CeruleanTrashedHouseFishingGuruText:
 	text_asm

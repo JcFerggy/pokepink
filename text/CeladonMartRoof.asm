@@ -95,13 +95,17 @@ _CeladonMartRoofLittleGirlImNotThirstyText::
 	text_end
 
 _CeladonMartRoofSuperNerdText::
-	text "My sister is a"
-	line "trainer, believe"
-	cont "it or not."
+	text "That trainer from"
+	line "before reminds me"
+	cont "of my sister."
 
-	para "But, she's so"
-	line "immature, she"
-	cont "drives me nuts!"
+	para "They're both so"
+	line "immature, he"
+	cont "drove me nuts!"
+	
+	para "Thank you for"
+	line "getting him to"
+	cont "leave me alone."
 	done
 
 _CeladonMartRoofLittleGirlImThirstyText::
@@ -147,3 +151,52 @@ _VendingMachineText6::
 _VendingMachineText7::
 	text "Not thirsty!"
 	done
+	
+_CeladonMartRoofChiefText::
+	text "Oii!"
+	line "Is that <PLAYER>?"
+	done
+
+_CeladonMartRoofChiefWaitedHereText::
+	text "I'm glad to see"
+	line "we could meet up"
+	cont "after my race."
+
+	para "Who knew that"
+	line "DODUO are bad"
+	cont "at flying?"
+
+	para "I had to use"
+	line "an HM just to"
+	cont "get them airborn!"
+
+	para "Anywho, do you"
+	line "have time for"
+	cont "a quick rematch?"
+	done
+
+_CeladonMartRoofChiefDefeatedText::
+	text "Darn!"
+
+	para "I thought I"
+	line "had a chance"
+	cont "at winning!"
+	prompt
+
+_CeladonMartRoofChiefVictoryText::
+	text "Dude, how can"
+	line "I put this?"
+
+	para "You're are not"
+	line "as good as I"
+	cont "remember..."
+	prompt
+
+_CeladonMartRoofChiefGoodLuckToYouText::
+	text "Ahh well, off to"
+	line "train some more."
+	
+	para "I'll catch ya"
+	line "later!"
+	done
+

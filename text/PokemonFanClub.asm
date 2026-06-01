@@ -1,11 +1,11 @@
 _PokemonFanClubClefairyFanNormalText::
 	text "Won't you admire"
-	line "my CLEFAIRY's"
+	line "my PIKACHU's"
 	cont "adorable tail?"
 	done
 
 _PokemonFanClubClefairyFanBetterText::
-	text "Humph! My CLEFAIRY"
+	text "Humph! My PIKACHU"
 	line "is twice as cute"
 	cont "as that one!"
 	done
@@ -17,7 +17,7 @@ _PokemonFanClubClefairyFanText::
 
 	para "He gave me a nice"
 	line "PRINT of my cute"
-	cont "CLEFAIRY."
+	cont "PIKACHU."
 	done
 
 _PokemonFanClubSeelFanNormalText::
@@ -43,7 +43,8 @@ _PokemonFanClubSeelFanText::
 	done
 
 _PokemonFanClubClefairyText::
-	text "CLEFAIRY: Pippii!"
+	text "PIKACHU: Chu!"
+	line "Pikachu!"
 	done
 
 _PokemonFanClubSeelText::

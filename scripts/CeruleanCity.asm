@@ -139,7 +139,7 @@ CeruleanCityRivalBattleScript:
 	call SaveEndBattleTextPointers
 	ld a, OPP_RIVAL1
 	ld [wCurOpponent], a
-	ld a, 3
+	ld a, 3 ; trainer number
 	ld [wTrainerNo], a
 	xor a
 	ldh [hJoyHeld], a

@@ -150,7 +150,7 @@ PokemonFanClubClefairyText:
 	text_asm
 	ld hl, .Text
 	call PrintText
-	ld a, CLEFAIRY
+	ld a, PIKACHU
 	call PlayCry
 	call WaitForSoundToFinish
 	jp TextScriptEnd

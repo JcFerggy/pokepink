@@ -59,7 +59,8 @@ ENDC
 PokemonTower2FRivalEncounterEventCoords:
 	dbmapcoord 15,  5
 	dbmapcoord 14,  6
-	db $0F ; end? (should be $ff?)
+	;db $0F ; end? (should be $ff?)
+	db -1 ; end PINK fix
 
 PokemonTower2FDefeatedRivalScript:
 	ld a, [wIsInBattle]
@@ -147,8 +148,9 @@ PokemonTower2FRivalText:
 	call SaveEndBattleTextPointers
 	ld a, OPP_RIVAL2
 	ld [wCurOpponent], a
-	ld a, [wRivalStarter]
-	add $1
+	;ld a, [wRivalStarter]
+	;add $3
+	ld a, 2 ; trainer number
 	ld [wTrainerNo], a
 
 	ld a, SCRIPT_POKEMONTOWER2F_DEFEATED_RIVAL

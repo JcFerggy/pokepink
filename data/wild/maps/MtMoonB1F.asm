@@ -8,8 +8,8 @@ MtMoonB1FWildMons:
 	db 11, ZUBAT
 	db  9, PARAS
 	db 11, PARAS
-	db 10, CLEFAIRY
-	db 12, CLEFAIRY
+	db 10, JIGGLYPUFF
+	db 12, JIGGLYPUFF
 	end_grass_wildmons
 
 	def_water_wildmons 0 ; encounter rate

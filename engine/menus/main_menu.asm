@@ -24,7 +24,10 @@ MainMenu:
 	ld hl, wStatusFlags4
 	res BIT_LINK_CONNECTED, [hl]
 	call ClearScreen
-	call RunDefaultPaletteCommand
+	;call RunDefaultPaletteCommand
+	ld b, SET_PAL_GENERIC
+	call RunPaletteCommand
+
 	call LoadTextBoxTilePatterns
 	call LoadFontTilePatterns
 	ld hl, wStatusFlags5

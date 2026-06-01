@@ -13,14 +13,14 @@ Route6WildMons:
 	end_grass_wildmons
 
 	def_water_wildmons 3 ; encounter rate
-	db 15, PSYDUCK
-	db 15, PSYDUCK
-	db 15, PSYDUCK
-	db 15, PSYDUCK
-	db 15, PSYDUCK
-	db 15, PSYDUCK
-	db 15, PSYDUCK
-	db 15, PSYDUCK
-	db 15, GOLDUCK
-	db 20, GOLDUCK
+	db 15, GOLDEEN
+	db 15, GOLDEEN
+	db 15, GOLDEEN
+	db 15, GOLDEEN
+	db 15, GOLDEEN
+	db 15, GOLDEEN
+	db 15, GOLDEEN
+	db 15, GOLDEEN
+	db 15, SEAKING
+	db 20, SEAKING
 	end_water_wildmons

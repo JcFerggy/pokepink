@@ -134,6 +134,13 @@ StartMenu_Pokemon::
 	jp z, .newBadgeRequired
 	call CheckIfInOutsideMap
 	jr z, .canFly
+	
+	ld a, [wCurMap] ;PINK additional fly checks
+	cp CELADON_MANSION_ROOF
+	jr z, .canFly
+	cp CELADON_MART_ROOF
+	jr z, .canFly
+	
 	ld a, [wWhichPokemon]
 	ld hl, wPartyMonNicks
 	call GetPartyMonName
@@ -662,7 +669,8 @@ StartMenu_SaveReset::
 	jp nz, Init
 	predef SaveMenu
 	call LoadScreenTilesFromBuffer2
-	jp HoldTextDisplayOpen
+	;jp HoldTextDisplayOpen
+	jp CloseStartMenu ;PINK fix
 
 StartMenu_Option::
 	xor a

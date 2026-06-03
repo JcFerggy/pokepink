@@ -18,7 +18,7 @@ rom_obj := \
 	gfx/tilesets.o
 
 pokeyellow_obj       := $(rom_obj)
-pokeyellow_debug_obj := $(rom_obj:.o=_debug.o)
+#pokeyellow_debug_obj := $(rom_obj:.o=_debug.o)
 pokeyellow_vc_obj    := $(rom_obj:.o=_vc.o)
 
 
@@ -51,7 +51,7 @@ RGBGFXFLAGS  ?= -Weverything
 .PHONY: \
 	all \
 	yellow \
-	yellow_debug \
+#	yellow_debug \
 	yellow_vc \
 	clean \
 	tidy \
@@ -60,7 +60,7 @@ RGBGFXFLAGS  ?= -Weverything
 
 all: $(roms)
 yellow:       pokeyellow.gbc
-yellow_debug: pokeyellow_debug.gbc
+#yellow_debug: pokeyellow_debug.gbc
 yellow_vc:    pokeyellow.patch
 
 clean: tidy
@@ -84,7 +84,7 @@ tidy:
 	      $(patches:%.patch=vc/%.constants.sym) \
 	      $(pokeyellow_obj) \
 	      $(pokeyellow_vc_obj) \
-	      $(pokeyellow_debug_obj) \
+#	      $(pokeyellow_debug_obj) \
 	      rgbdscheck.o
 	$(MAKE) clean -C tools/
 
@@ -97,11 +97,11 @@ tools:
 
 RGBASMFLAGS += -Q8 -P includes.asm
 # Create a sym/map for debug purposes if `make` run with `DEBUG=1`
-ifeq ($(DEBUG),1)
-RGBASMFLAGS += -E
-endif
+#ifeq ($(DEBUG),1)
+#RGBASMFLAGS += -E
+#endif
 
-$(pokeyellow_debug_obj): RGBASMFLAGS += -D _DEBUG
+#$(pokeyellow_debug_obj): RGBASMFLAGS += -D _DEBUG
 $(pokeyellow_vc_obj):    RGBASMFLAGS += -D _YELLOW_VC
 
 %.patch: %_vc.gbc %.gbc vc/%.patch.template
@@ -127,7 +127,7 @@ endef
 
 # Dependencies for objects
 $(foreach obj, $(pokeyellow_obj), $(eval $(call DEP,$(obj),$(obj:.o=.asm))))
-$(foreach obj, $(pokeyellow_debug_obj), $(eval $(call DEP,$(obj),$(obj:_debug.o=.asm))))
+#$(foreach obj, $(pokeyellow_debug_obj), $(eval $(call DEP,$(obj),$(obj:_debug.o=.asm))))
 $(foreach obj, $(pokeyellow_vc_obj), $(eval $(call DEP,$(obj),$(obj:_vc.o=.asm))))
 
 endif
@@ -135,12 +135,12 @@ endif
 
 RGBLINKFLAGS += -d
 pokeyellow.gbc:       RGBLINKFLAGS += -p 0x00
-pokeyellow_debug.gbc: RGBLINKFLAGS += -p 0xff
+#pokeyellow_debug.gbc: RGBLINKFLAGS += -p 0xff
 pokeyellow_vc.gbc:    RGBLINKFLAGS += -p 0x00
 
 RGBFIXFLAGS += -cjsv -k 01 -l 0x33 -m MBC5+RAM+BATTERY -r 03 -t "POKEMON YELLOW"
 pokeyellow.gbc:       RGBFIXFLAGS += -p 0x00
-pokeyellow_debug.gbc: RGBFIXFLAGS += -p 0xff
+#pokeyellow_debug.gbc: RGBFIXFLAGS += -p 0xff
 pokeyellow_vc.gbc:    RGBFIXFLAGS += -p 0x00
 
 %.gbc: $$(%_obj) layout.link

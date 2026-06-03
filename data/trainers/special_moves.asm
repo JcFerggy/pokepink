@@ -199,13 +199,13 @@ SpecialTrainerMoves:
 	db 5, 3, STRENGTH
 	db 0
 
-	db AGATHA, 1 	
-	db 1, 2, SUPERSONIC ;LICKITUNG was GENGAR
+	db AGATHA, 1
 	db 1, 2, SUBSTITUTE
 	db 1, 3, LICK
-	db 1, 4, REST
-	db 2, 2, TOXIC ;GOLBAT
-	db 2, 4, LEECH_LIFE
+	db 2, 1, SUPERSONIC ;LICKITUNG was GOLBAT
+	db 2, 2, TOXIC
+	db 2, 3, LICK
+	db 2, 4, BODY_SLAM
 	db 3, 2, LICK ;HAUNTER
 	db 4, 1, TRI_ATTACK ;CLEFABLE was ARBOK
 	db 4, 2, TOXIC

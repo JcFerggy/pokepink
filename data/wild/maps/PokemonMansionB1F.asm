@@ -7,8 +7,8 @@ PokemonMansionB1FWildMons:
 	db 41, WEEZING
 	db 43, RATICATE
 	db 24, DITTO
-	db 46, RATICATE
-	db 18, MAGMAR ;pink
+	db 39, MAGMAR ;PINK 46, RATICATE
+	db 18, DITTO
 	db 12, DITTO
 	end_grass_wildmons
 

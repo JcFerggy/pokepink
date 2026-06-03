@@ -8,8 +8,8 @@ MtMoonB1FWildMons:
 	db 11, ZUBAT
 	db  9, PARAS
 	db 11, PARAS
-	db 10, JIGGLYPUFF
-	db 12, JIGGLYPUFF
+	db 12, JIGGLYPUFF ;PINK was CLEFAIRY
+	db 12, GEODUDE ;PINK was CLEFAIRY
 	end_grass_wildmons
 
 	def_water_wildmons 0 ; encounter rate

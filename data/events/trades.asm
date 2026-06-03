@@ -16,14 +16,14 @@ TradeMons:
 	; post-trade text. English Yellow changed _AfterTrade2Text to
 	; not mention evolution.
 	npctrade DITTO, 	 	DODRIO,  	TRADE_DIALOGSET_CASUAL,    	"STOOGES" 	; Route 11
-	npctrade PIKACHU,		DROWZEE,  	TRADE_DIALOGSET_CASUAL,    	"SANDMAN" 	; Route 2
+	npctrade PIKACHU,		STARMIE,  	TRADE_DIALOGSET_CASUAL,    	"ASTRAL" 	; Route 2
 	npctrade BEEDRILL,		BUTTERFREE, TRADE_DIALOGSET_HAPPY,     	"MARGE" 	; unused
-	npctrade TAUROS,	    KOFFING,    TRADE_DIALOGSET_CASUAL,    	"SMOKEY"	; Pokemon Lab 3
+	npctrade TAUROS,	    WEEZING,    TRADE_DIALOGSET_CASUAL,    	"SMOKEY"	; Pokemon Lab 3
 	npctrade MEW,        	MEW,      	TRADE_DIALOGSET_HAPPY,     	"LISA"    	; unused
 	npctrade RHYHORN,    	CHANSEY, 	TRADE_DIALOGSET_CASUAL,    	"CHERYL" 	; Route 18
 	npctrade PIDGEOT,    	PIDGEOT,  	TRADE_DIALOGSET_EVOLUTION, 	"MCFLY"   	; unused
-	npctrade KINGLER,    	SANDSHREW,  TRADE_DIALOGSET_HAPPY, 		"SCRAPPY" 	; Pokemon Lab 1
-	npctrade VULPIX,		STARMIE,  	TRADE_DIALOGSET_HAPPY,     	"ORION" 	; Pokemon Lab 2
+	npctrade KINGLER,    	KANGASKHAN, TRADE_DIALOGSET_HAPPY, 		"GENGHIS" 	; Pokemon Lab 1
+	npctrade VULPIX,		SEEL,		TRADE_DIALOGSET_HAPPY,     	"CADET" 	; Pokemon Lab 2
 	npctrade VOLTORB,     	KADABRA,  	TRADE_DIALOGSET_EVOLUTION, 	"HOUDINI" 	; Underground Path 5-6
 	assert_table_length NUM_NPC_TRADES
 	

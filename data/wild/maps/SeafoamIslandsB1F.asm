@@ -8,8 +8,8 @@ SeafoamIslandsB1FWildMons:
 	db 29, HORSEA
 	db 18, ZUBAT
 	db 28, GOLDUCK
-	db 22, SEEL
-	db 26, SEEL
+	db 22, POLIWAG
+	db 26, POLIWAG
 	end_grass_wildmons
 
 	def_water_wildmons 0 ; encounter rate

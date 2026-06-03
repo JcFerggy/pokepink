@@ -6,13 +6,13 @@ PrizeDifferentMenuPtrs:
 PrizeMenuMon1Entries:
 	db ABRA
 	db GROWLITHE
-	db SEADRA
+	db SLOWPOKE
 	db "@"
 
 PrizeMenuMon1Cost:
 	bcd2 200
 	bcd2 1100
-	bcd2 2460
+	bcd2 1600
 	db "@"
 
 PrizeMenuMon2Entries:

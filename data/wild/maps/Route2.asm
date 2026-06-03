@@ -2,14 +2,14 @@ Route2WildMons:
 	def_grass_wildmons 25 ; encounter rate
 	db  3, RATTATA
 	db  3, PIDGEY
-	db  4, RATTATA
-	db  4, NIDORAN_F
-	db  4, NIDORAN_M
-	db  5, PIDGEY
+	db  4, PIDGEY ;PINK
+	db  4, RATTATA ;PINK
+	db  5, PIDGEY ;PINK
+	db  5, CATERPIE ;PINK
 	db  6, NIDORAN_F
 	db  6, NIDORAN_M
-	db  7, CATERPIE
 	db  5, PIKACHU ;Manga
+	db  5, PIKACHU ;Manga 7, PIDGEY
 	end_grass_wildmons
 
 	def_water_wildmons 0 ; encounter rate

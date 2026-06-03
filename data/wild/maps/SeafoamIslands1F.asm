@@ -5,8 +5,8 @@ SeafoamIslands1FWildMons:
 	db 27, PSYDUCK
 	db 27, ZUBAT
 	db 36, ZUBAT
-	db 28, SLOWPOKE
-	db 30, SLOWPOKE
+	db 28, HORSEA
+	db 30, HORSEA
 	db  9, ZUBAT
 	db 27, GOLBAT
 	db 36, GOLBAT

@@ -137,7 +137,7 @@ _Route8CooltrainerF4EndBattleText::
 	text "Stop!"
 
 	para "Don't be so mean"
-	line "to my CLEFAIRY!"
+	line "to my #MON!"
 	prompt
 
 _Route8CooltrainerF4AfterBattleText::

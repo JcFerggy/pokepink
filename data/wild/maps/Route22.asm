@@ -7,8 +7,8 @@ Route22WildMons:
 	db  4, NIDORAN_F
 	db  4, NIDORAN_M
 	db  5, MANKEY
-	db  2, SPEAROW
-	db  4, SPEAROW
+	db  3, SPEAROW ;PINK was 2
+	db  4, ZUBAT ;PINK was SPEAROW
 	db  6, SPEAROW
 	end_grass_wildmons
 

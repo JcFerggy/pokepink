@@ -150,8 +150,8 @@ ToggleableObjectStates:
 	toggle_object_state POKEMONTOWER4F_AWAKENING, ON
 	toggle_object_state POKEMONTOWER4F_HP_UP,     ON
 
-	toggleable_objects_for CELADON_MART_ROOF
-	toggle_object_state CELADONMARTROOF_CHIEF, ON
+	toggleable_objects_for POKEMON_TOWER_5F
+	toggle_object_state POKEMONTOWER5F_NUGGET, ON
 
 	toggleable_objects_for POKEMON_TOWER_6F
 	toggle_object_state POKEMONTOWER6F_RARE_CANDY, ON
@@ -171,12 +171,13 @@ ToggleableObjectStates:
 	toggleable_objects_for GAME_CORNER
 	toggle_object_state GAMECORNER_ROCKET, ON
 
-	toggleable_objects_for UNDERGROUND_PATH_WEST_EAST
-	toggle_object_state UNDERGROUNDPATHWESTEAST_CHIEF, OFF
+	toggleable_objects_for WARDENS_HOUSE
+	toggle_object_state WARDENSHOUSE_RARE_CANDY, ON
 
 	toggleable_objects_for POKEMON_MANSION_1F
-	toggle_object_state POKEMONMANSION1F_CHIEF, OFF
+	toggle_object_state POKEMONMANSION1F_ESCAPE_ROPE, ON
 	toggle_object_state POKEMONMANSION1F_CARBOS,      ON
+	toggle_object_state POKEMONMANSION1F_CHIEF,       OFF ;PINK
 
 	toggleable_objects_for FIGHTING_DOJO
 	toggle_object_state FIGHTINGDOJO_HITMONLEE_POKE_BALL,  ON
@@ -217,17 +218,15 @@ ToggleableObjectStates:
 	toggleable_objects_for VIRIDIAN_FOREST
 	toggle_object_state VIRIDIANFOREST_POTION1,   ON
 	toggle_object_state VIRIDIANFOREST_POTION2,   ON
-	
-	toggleable_objects_for CERULEAN_TRASHED_HOUSE
-	;toggle_object_state VIRIDIANFOREST_POKE_BALL, ON PINK
-	toggle_object_state CERULEANTRASHEDHOUSE_CHIEF7, OFF
+	toggle_object_state VIRIDIANFOREST_POKE_BALL, ON
 
-	toggle_object_state CERULEANTRASHEDHOUSE_CHIEF1,      OFF
-	toggle_object_state CERULEANTRASHEDHOUSE_CHIEF2,   OFF
-	toggle_object_state CERULEANTRASHEDHOUSE_CHIEF3,   OFF
-	toggle_object_state CERULEANTRASHEDHOUSE_CHIEF4,  OFF
-	toggle_object_state CERULEANTRASHEDHOUSE_CHIEF5,      OFF
-	toggle_object_state CERULEANTRASHEDHOUSE_CHIEF6, OFF
+	toggleable_objects_for MT_MOON_1F
+	toggle_object_state MTMOON1F_POTION1,      ON
+	toggle_object_state MTMOON1F_MOON_STONE,   ON
+	toggle_object_state MTMOON1F_RARE_CANDY,   ON
+	toggle_object_state MTMOON1F_ESCAPE_ROPE,  ON
+	toggle_object_state MTMOON1F_POTION2,      ON
+	toggle_object_state MTMOON1F_TM_WATER_GUN, ON
 
 	toggleable_objects_for MT_MOON_B2F
 	toggle_object_state MTMOONB2F_JESSIE,        OFF
@@ -253,19 +252,20 @@ ToggleableObjectStates:
 	toggle_object_state SSANNEB1FROOMS_MAX_POTION, ON
 
 	toggleable_objects_for VICTORY_ROAD_3F
-	toggle_object_state VICTORYROAD3F_CHIEF1,   ON
+	toggle_object_state VICTORYROAD3F_MAX_REVIVE,   ON
 	toggle_object_state VICTORYROAD3F_TM_EXPLOSION, ON
 	toggle_object_state VICTORYROAD3F_BOULDER4,     ON
+	toggle_object_state VICTORYROAD3F_CHIEF,        OFF ;PINK
 
 	toggleable_objects_for ROCKET_HIDEOUT_B1F
 	toggle_object_state ROCKETHIDEOUTB1F_ESCAPE_ROPE,  ON
 	toggle_object_state ROCKETHIDEOUTB1F_HYPER_POTION, ON
 
-	toggleable_objects_for SUMMER_BEACH_HOUSE
-	toggle_object_state SUMMERBEACHHOUSE_IMPOSTER,    OFF
-	toggle_object_state SUMMERBEACHHOUSE_FAIRY,        OFF
-	toggle_object_state SUMMERBEACHHOUSE_PIKACHU, ON
-	toggle_object_state SUMMERBEACHHOUSE_YELLOW,  OFF
+	toggleable_objects_for ROCKET_HIDEOUT_B2F
+	toggle_object_state ROCKETHIDEOUTB2F_MOON_STONE,    ON
+	toggle_object_state ROCKETHIDEOUTB2F_NUGGET,        ON
+	toggle_object_state ROCKETHIDEOUTB2F_TM_HORN_DRILL, ON
+	toggle_object_state ROCKETHIDEOUTB2F_SUPER_POTION,  ON
 
 	toggleable_objects_for ROCKET_HIDEOUT_B3F
 	toggle_object_state ROCKETHIDEOUTB3F_TM_DOUBLE_EDGE, ON
@@ -351,8 +351,8 @@ ToggleableObjectStates:
 	toggle_object_state SILPHCO11F_ROCKET,   ON
 	toggle_object_state SILPHCO11F_JESSIE,   ON
 
-	toggleable_objects_for UNDERGROUND_PATH_NORTH_SOUTH
-	toggle_object_state UNDERGROUNDPATHNORTHSOUTH_CHIEF, OFF ; unused
+	toggleable_objects_for UNDERGROUND_PATH_NORTH_SOUTH ;PINK
+	toggle_object_state UNDERGROUNDPATHNORTHSOUTH_CHIEF, OFF ; previosly unused
 
 	toggleable_objects_for POKEMON_MANSION_2F
 	toggle_object_state POKEMONMANSION2F_CALCIUM, ON
@@ -379,10 +379,11 @@ ToggleableObjectStates:
 	toggle_object_state SAFARIZONENORTH_TM_SKULL_BASH, ON
 
 	toggleable_objects_for SAFARI_ZONE_WEST
-	toggle_object_state SAFARIZONEWEST_CHIEF,     OFF
+	toggle_object_state SAFARIZONEWEST_MAX_POTION,     ON
 	toggle_object_state SAFARIZONEWEST_TM_DOUBLE_TEAM, ON
 	toggle_object_state SAFARIZONEWEST_MAX_REVIVE,     ON
 	toggle_object_state SAFARIZONEWEST_GOLD_TEETH,     ON
+	toggle_object_state SAFARIZONEWEST_CHIEF,          OFF ;PINK
 
 	toggleable_objects_for SAFARI_ZONE_CENTER
 	toggle_object_state SAFARIZONECENTER_NUGGET, ON
@@ -429,6 +430,26 @@ ToggleableObjectStates:
 	toggle_object_state SEAFOAMISLANDSB4F_BOULDER1, OFF
 	toggle_object_state SEAFOAMISLANDSB4F_BOULDER2, OFF
 	toggle_object_state SEAFOAMISLANDSB4F_ARTICUNO, ON
+	
+	toggleable_objects_for CELADON_MART_ROOF ;PINK
+	toggle_object_state CELADONMARTROOF_CHIEF, ON
+	
+	toggleable_objects_for UNDERGROUND_PATH_WEST_EAST ;PINK
+	toggle_object_state UNDERGROUNDPATHWESTEAST_CHIEF, OFF
+	
+	toggleable_objects_for CERULEAN_TRASHED_HOUSE ;PINK
+	toggle_object_state CERULEANTRASHEDHOUSE_CHIEF1, OFF
+	toggle_object_state CERULEANTRASHEDHOUSE_CHIEF2, OFF
+	toggle_object_state CERULEANTRASHEDHOUSE_CHIEF3, OFF
+	toggle_object_state CERULEANTRASHEDHOUSE_CHIEF4, OFF
+	toggle_object_state CERULEANTRASHEDHOUSE_CHIEF5, OFF
+	toggle_object_state CERULEANTRASHEDHOUSE_CHIEF6, OFF
+	toggle_object_state CERULEANTRASHEDHOUSE_CHIEF7, OFF
+	
+	toggleable_objects_for SUMMER_BEACH_HOUSE ;PINK
+	toggle_object_state SUMMERBEACHHOUSE_IMPOSTER,  OFF ;BLUESHOUSE_DAISY1
+	toggle_object_state SUMMERBEACHHOUSE_FAIRY,     OFF ;BLUESHOUSE_DAISY2
+	toggle_object_state SUMMERBEACHHOUSE_YELLOW,    OFF ;BLUESHOUSE_TOWN_MAP
 
 ; unreferenced
 	db BLUES_HOUSE, BLUESHOUSE_DAISY1,   ON

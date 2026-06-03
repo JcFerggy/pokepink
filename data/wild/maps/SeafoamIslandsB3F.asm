@@ -5,10 +5,10 @@ SeafoamIslandsB3FWildMons:
 	db 29, PSYDUCK
 	db 27, ZUBAT
 	db 30, GOLDUCK
-	db 26, SEEL
+	db 26, POLIWAG
 	db 31, PSYDUCK
-	db 30, SEEL
-	db 28, DEWGONG
+	db 30, POLIWAG
+	db 28, JYNX
 	db 32, JYNX
 	end_grass_wildmons
 

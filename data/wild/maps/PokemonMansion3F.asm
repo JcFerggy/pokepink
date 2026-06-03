@@ -3,8 +3,8 @@ PokemonMansion3FWildMons:
 	db 40, RATTATA
 	db 40, RATICATE
 	db 32, KOFFING
-	db 35, MAGMAR ;pink
-	db 43, RATTATA
+	db 35, KOFFING
+	db 35, MAGMAR ;pink 43 RATTATA
 	db 43, RATICATE
 	db 38, KOFFING
 	db 38, KOFFING

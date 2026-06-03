@@ -87,7 +87,6 @@ ChampionsRoomRivalDefeatedScript:
 	jp z, ResetRivalScript
 	call UpdateSprites
 	SetEvent EVENT_BEAT_CHAMPION_RIVAL
-	SetEvent EVENT_BEAT_GREEN
 	
 	ld a, TOGGLE_CERULEANTRASHEDHOUSE_CHIEF_1
 	ld [wToggleableObjectIndex], a
@@ -117,13 +116,20 @@ ChampionsRoomRivalDefeatedScript:
 	ld [wToggleableObjectIndex], a
 	predef ShowObject
 	
+	CheckEvent EVENT_BEAT_GREEN
+	jr nz, .returning_chap
+	
 	ld a, TOGGLE_SUMMER_BEACH_HOUSE_IMPOSTER
 	ld [wToggleableObjectIndex], a
 	predef ShowObject
+	
 	ld a, TOGGLE_SUMMER_BEACH_HOUSE_FAIRY
 	ld [wToggleableObjectIndex], a
 	predef ShowObject
 	
+	SetEvent EVENT_BEAT_GREEN
+	
+.returning_chap
 	;ResetEvents EVENT_BEAT_CERULEANTRASHEDHOUSE_TRAINER_0, EVENT_BEAT_CERULEANTRASHEDHOUSE_TRAINER_6
 	
 	ld a, PAD_CTRL_PAD

@@ -62,30 +62,46 @@ _VictoryRoad3FCooltrainerF2AfterBattleText::
 	cont "stronger!"
 	done
 
-_VictoryRoad3FCheif1Text::
-	text "I finally got"
-	line "ahead of you"
-	cont "for once!"
+_VictoryRoad3FChiefText::
+	text "STOP! WAIT UP!"
+	line "I'M RIGHT BEHIND"
+	cont "YOU!"
 	done
 	
-_VictoryRoad3FCheif1WaitedHereText::
-	text "After reading the"
-	line "notes left in"
-	cont "that mansion,"
+_VictoryRoad3FChiefWaitedHereText::
+	text "Hah hah."
+	line "I'm, out, of,"
+	cont "breath. Just"
+	cont "one second..."
+	
+	para "I thought I would"
+	line "actually get ahead"
+	cont "of you for once."
+	
+	para "Whew!"
+	line "Anyway."
+
+	para "After reading"
+	line "those notes left"
+	cont "in that mansion"
+	cont "on CINNABAR,"
 
 	para "I went searching"
-	line "for the strongest"
-	cont "#MON. I will"
-	cont "finally win!"
+	line "for that very"
+	cont "#MON."
+	
+	para "This time, I will"
+	line "finally win"
+	cont "against you!"
 	done
 
-_VictoryRoad3FCheif1DefeatedText::
+_VictoryRoad3FChiefDefeatedText::
 	text "I guess"
 	line "I have nothing"
 	cont "left to prove."
 	prompt
 
-_VictoryRoad3FCheif1VictoryText::
+_VictoryRoad3FChiefVictoryText::
 	text "YES! I knew"
 	line "I was better!"
 
@@ -94,19 +110,23 @@ _VictoryRoad3FCheif1VictoryText::
 	cont "you'll win."
 	prompt
 
-_VictoryRoad3FCheif1GoodLuckToYouText::
+_VictoryRoad3FChiefGoodLuckToYouText::
 	text "Well, <PLAYER>!"
 
 	para "I thought my ace"
 	line "would cinch the"
 	cont "win for me..."
 	
+	para "But I had fun"
+	line "on my #MON"
+	cont "journey."
+	
 	para "I hope you win"
 	line "the league and"
-	cont "become the "
+	cont "become the new"
 	cont "champion."
 	
-	para "Best of luck"
-	line "out there!"
+	para "Best of luck to"
+	line "you out there!"
 	done
 	

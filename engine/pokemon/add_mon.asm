@@ -182,16 +182,20 @@ _AddPartyMon::
 	ld a, [hli]       ; catch rate (held item in gen 2)
 	ld [de], a		;PINK New code check for DRATINI
 	ld a, [wCurPartySpecies]
-
 	cp KADABRA
-	jr nz, .checkDratini
+	jr z, .checkKadabra
+	cp DRATINI
+	jr z, .checkDratini
+	cp DRAGONAIR
+	jr z, .checkDratini
+	jr .doneHeldItem
+
+.checkKadabra
 	ld a, TWISTEDSPOON_GSC
 	ld [de], a
 	jr .doneHeldItem
 
 .checkDratini
-	cp DRATINI
-	jr nz, .doneHeldItem
 	ld a, $BB ; PINK BLUE_SKY_MAIL
 	ld [de], a
 

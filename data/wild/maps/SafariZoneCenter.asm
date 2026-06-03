@@ -8,7 +8,7 @@ SafariZoneCenterWildMons:
 	db 27, PARASECT
 	db 27, PARAS
 	db 32, PARASECT
-	db 22, TANGELA
+	db 22, LICKITUNG
 	db  7, CHANSEY
 	end_grass_wildmons
 

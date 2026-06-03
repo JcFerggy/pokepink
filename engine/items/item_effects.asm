@@ -3106,14 +3106,19 @@ SendNewMonToBox:
 	jr nz, .movePPLoop
 	ld a, [wCurPartySpecies]
 	cp KADABRA
-	jr nz, .checkDratini
+	jr z, .checkKadabra
+	cp DRATINI
+	jr z, .checkDratini
+	cp DRAGONAIR
+	jr z, .checkDratini
+	jr .doneHeldItem
+	
+.checkKadabra
 	ld a, TWISTEDSPOON_GSC
 	ld [wBoxMon1CatchRate], a
 	jr .doneHeldItem
 
 .checkDratini
-	cp DRATINI
-	jr nz, .doneHeldItem
 	ld a, $BB ; PINK BLUE_SKY_MAIL
 	ld [wBoxMon1CatchRate], a
 	

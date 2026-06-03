@@ -12,7 +12,6 @@ UndergroundPathWestEastResetScripts:
 	call nz, UndergroundPathWestEastScript_HideChief
 	xor a
 	ld [wJoyIgnore], a
-	
 UndergroundPathWestEastSetCurScript:
 	ld [wUndergroundPathWestEastCurScript], a
 	ld [wCurMapScript], a
@@ -34,7 +33,7 @@ UndergroundPathWestEast_ScriptPointers:
 	
 	
 UndergroundPathWestEastDefaultScript:
-	CheckEvent EVENT_BEAT_UNDERGROUND2_CHIRF
+	CheckEvent EVENT_BEAT_UNDERGROUND2_CHIEF
 	call z, UndergroundPathWestEastScript_Challenger
 	ret
 
@@ -209,6 +208,7 @@ UndergroundPathWestEastChiefStartBattleScript:
 	;add 6 ;PINK adjusted pointer from adding Rival data
 	ld a, 2 ; trainer number
 	ld [wTrainerNo], a
+	SetEvent EVENT_57E
 	ld a, SCRIPT_UNDERGROUNDPATHWESTEAST_CHIEF_AFTER_BATTLE
 	call UndergroundPathWestEastSetCurScript
 	ret
@@ -216,10 +216,10 @@ UndergroundPathWestEastChiefStartBattleScript:
 UndergroundPathWestEastChiefAfterBattleScript:
 	ld a, [wIsInBattle]
 	cp $ff
-	jp z, UndergroundPathWestEastDefaultScript
+	jp z, UndergroundPathWestEastResetScripts
 	ld a, PAD_CTRL_PAD
 	ld [wJoyIgnore], a
-	SetEvent EVENT_BEAT_UNDERGROUND2_CHIRF
+	SetEvent EVENT_BEAT_UNDERGROUND2_CHIEF
 	ResetEventReuseHL EVENT_57E
 	ld a, PLAYER_DIR_RIGHT
 	ld [wPlayerMovingDirection], a

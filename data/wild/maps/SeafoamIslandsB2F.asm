@@ -5,7 +5,7 @@ SeafoamIslandsB2FWildMons:
 	db 36, ZUBAT
 	db 27, GOLBAT
 	db 28, GOLDUCK
-	db 24, SEEL
+	db 24, POLIWAG
 	db 29, PSYDUCK
 	db 36, GOLBAT
 	db 31, HORSEA

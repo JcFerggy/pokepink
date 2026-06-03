@@ -35,6 +35,9 @@ SummerBeachHouseImposterText:
 	text_asm
 	CheckEvent EVENT_BEAT_SUMMERBEACHHOUSE_TRAINER_0
 	jr nz, .beatenAleady
+	
+	CheckEvent EVENT_REVEAL_SUMMERBEACHHOUSE_TRAINER
+	jr nz, .beatenAleady
 	call GBFadeOutToBlack
 	ld a, TOGGLE_SUMMER_BEACH_HOUSE_IMPOSTER
 	ld [wToggleableObjectIndex], a
@@ -42,8 +45,9 @@ SummerBeachHouseImposterText:
 	ld a, TOGGLE_SUMMER_BEACH_HOUSE_YELLOW
 	ld [wToggleableObjectIndex], a
 	predef ShowObject
+	SetEvent EVENT_REVEAL_SUMMERBEACHHOUSE_TRAINER
 	
-	
+
 	ld hl, .SummerBeachHouseBattleCoords
 	call ArePlayerCoordsInArray
 	ld a, [wCoordIndex]
@@ -194,6 +198,7 @@ SummerBeachHouseFairyText:
 
 SummerBeachHousePoster1Text:
 	text_asm
+	ResetEvent EVENT_BEAT_SUMMERBEACHHOUSE_TRAINER_0
 	ld hl, .SummerBeachHousePoster1Text2
 	ld a, [wd471]
 	bit 6, a

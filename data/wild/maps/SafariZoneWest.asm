@@ -9,7 +9,7 @@ SafariZoneWestWildMons:
 	db 26, EXEGGCUTE
 	db 24, MAROWAK
 	db 25, SCYTHER
-	db 27, TANGELA
+	db 27, LICKITUNG
 	end_grass_wildmons
 
 	def_water_wildmons 0 ; encounter rate

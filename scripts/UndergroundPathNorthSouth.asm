@@ -12,7 +12,6 @@ UndergroundPathNorthSouthResetScripts:
 	call nz, UndergroundPathNorthSouthScript_HideChief
 	xor a
 	ld [wJoyIgnore], a
-	
 UndergroundPathNorthSouthSetCurScript:
 	ld [wUndergroundPathNorthSouthCurScript], a
 	ld [wCurMapScript], a
@@ -34,7 +33,7 @@ UndergroundPathNorthSouth_ScriptPointers:
 	
 	
 UndergroundPathNorthSouthDefaultScript:
-	CheckEvent EVENT_BEAT_UNDERGROUND_CHIRF
+	CheckEvent EVENT_BEAT_UNDERGROUND_CHIEF
 	call z, UndergroundPathNorthSouthScript_Challenger
 	ret
 
@@ -193,6 +192,7 @@ UndergroundPathNorthSouthChiefStartBattleScript:
 	;add 6 ;PINK adjusted pointer from adding Rival data
 	ld a, 1 ; trainer number
 	ld [wTrainerNo], a
+	SetEvent EVENT_57E
 	ld a, SCRIPT_UNDERGROUNDPATHNORTHSOUTH_CHIEF_AFTER_BATTLE
 	call UndergroundPathNorthSouthSetCurScript
 	ret
@@ -200,10 +200,10 @@ UndergroundPathNorthSouthChiefStartBattleScript:
 UndergroundPathNorthSouthChiefAfterBattleScript:
 	ld a, [wIsInBattle]
 	cp $ff
-	jp z, UndergroundPathNorthSouthDefaultScript
+	jp z, UndergroundPathNorthSouthResetScripts
 	ld a, PAD_CTRL_PAD
 	ld [wJoyIgnore], a
-	SetEvent EVENT_BEAT_UNDERGROUND_CHIRF
+	SetEvent EVENT_BEAT_UNDERGROUND_CHIEF
 	ResetEventReuseHL EVENT_57E
 	ld a, PLAYER_DIR_UP
 	ld [wPlayerMovingDirection], a

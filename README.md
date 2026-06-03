@@ -5,10 +5,7 @@
 
 This project is what I imagined a hypothetical ‘Pokémon Pink’ would look like when rumors of one were first mentioned in the Giga Leak™. Along with the trivia of Clefairy once being the potential mascot for the series before Pikachu, and the often overlooked Pocket Monsters manga where Red chooses Clefairy as his starter; there is plenty of good reference material for such a project. With that said, it was thanks to seeing Sindorman's animation on [Instagram](https://www.instagram.com/p/B_dAOwBJTfq/), which then lead me to Artsy-Theo's posting of these four emotion portraits on [Tumblr](https://www.tumblr.com/artsy-theo/180634822998/pokemon-pinkspecial-clefairy-edition-clefairy?source=share), and everything afterwards has just been me trying my best, having never coded in assembly before starting this project; though I have gotten tones of assistance from the pret Discord from all the lovely people on there.
 
-![alt text](https://i.imgur.com/n1UDfCk.png "Prof. Oak Speech")![alt text](https://i.imgur.com/9OgGduq.png "Prof. Oak Capture")![alt text](https://i.imgur.com/ARnIYY7.png "Rival Battle")
-![alt text](https://i.imgur.com/sklqXWv.png "Clefairy Escape Pokeball")![alt text](https://i.imgur.com/NyMrTr3.png "Clefairy Displeased")![alt text](https://i.imgur.com/nSoiqb9.png "Clefairy Asleep")
-![alt text](https://i.imgur.com/NQ55dXr.png "Clefairy Confused")![alt text](https://i.imgur.com/3udbluY.png "Clefairy Surprised")![alt text](https://i.imgur.com/2dgTqxn.png "Clefairy in Love")
-![alt text](https://i.imgur.com/ygEIeym.png "Clefairy Happy")![alt text](https://i.imgur.com/hgIcXCj.png "Clefairy Caught It")![alt text](https://i.imgur.com/MSwCaWp.png "Clefairy Scared")
+[![IMAGE ALT TEXT HERE](https://i.imgur.com/6wi3bWc.png)](https://www.youtube.com/watch?v=jP5R1bcot8g)
 
 (Did YOU Know? Pokémon Green had its own exclusive Super GameBoy palette? The international releases of Red & Blue were built off of Jp Blue, which itself was built off of Jp Red; then the devs forgot about this detail, and Pokemon Red's palette was used twice internationally. Every town across Kanto had their colors slightly shifted between Red and Green, but most notable was the colors used for Pallet Town (and Lorelei Room) being teal or purple in Red or Green respectively. Cinnabar Island does use the same base colors, however the background shade of white had been tinted in each versions respective color, so no screen goes untouched.
 
@@ -23,6 +20,11 @@ In Pokemon Pink, all palettes across the game have been modified to heavily to r
 ![alt text](https://i.imgur.com/obJ3B62.png "Rattata GBC")![alt text](https://i.imgur.com/X3XitnR.png "Raticate GBC")![alt text](https://i.imgur.com/Bc0z1p5.png "Geodude GBC")![alt text](https://i.imgur.com/OjuZHyf.png "Jync GBC")![alt text](https://i.imgur.com/M7DpTnl.png "Tauros GBC")![alt text](https://i.imgur.com/SmVz3mC.png "Mew GBC")
 
 Generic trainer parties that were edited in Yellow to reference specific Pokemon anime episodes have been reverted to their Red & Blue encounters. (Though Jessie and James are still present, having integrated themselves much more heavily in each map's scripting. I just thought it best to leave them for the time being, but who knows? Maybe in the future I might attempt something. No promises.) Meanwhile unlike Red, Blue, or Yellow, I have chose to forgo any attempt at rival starter balancing, and decided instead to stick close to the rival's Pocket Monsters manga counterpart in Green, even slightly breaking established patterns in rematch fights and allowing the rival slightly wider access to their manga team. Gym Leader encounters have as well have been edited to reflect their Pocket Monster manga teams while respecting the progression and level curve.
+
+![alt text](https://i.imgur.com/n1UDfCk.png "Prof. Oak Speech")![alt text](https://i.imgur.com/9OgGduq.png "Prof. Oak Capture")![alt text](https://i.imgur.com/ARnIYY7.png "Rival Battle")
+![alt text](https://i.imgur.com/sklqXWv.png "Clefairy Escape Pokeball")![alt text](https://i.imgur.com/NyMrTr3.png "Clefairy Displeased")![alt text](https://i.imgur.com/nSoiqb9.png "Clefairy Asleep")
+![alt text](https://i.imgur.com/NQ55dXr.png "Clefairy Confused")![alt text](https://i.imgur.com/3udbluY.png "Clefairy Surprised")![alt text](https://i.imgur.com/2dgTqxn.png "Clefairy in Love")
+![alt text](https://i.imgur.com/ygEIeym.png "Clefairy Happy")![alt text](https://i.imgur.com/hgIcXCj.png "Clefairy Caught It")![alt text](https://i.imgur.com/MSwCaWp.png "Clefairy Scared")
 
 One thing sometimes overlooked about Pokemon Yellow was its removal of all Pikachu across the region, leaving only your partner Pikachu; including both wild and trainer caught alike, with the only exception being Lt. Surge's Raichu. To reflect this, all Clefairy have been removed across the region, previously removed Pikachu have been restored, and Elite Four Agatha's team has been edited to contain the only Clefable in the region.
 
@@ -77,7 +79,7 @@ Head over to the Releases page to [download the latest release](https://github.c
 
 <hr>
 
-# Pokémon Yellow [![Build Status][ci-badge]][ci]
+# Pokémon Pink [![Build Status][ci-badge]][ci]
 
 This is a disassembly of Pokémon Pink, that was modified from the disassembly of  Pokémon Yellow.
 
@@ -96,7 +98,7 @@ To set up the repository, see [**INSTALL.md**](INSTALL.md).
 - [**Symbols**][symbols]
 - [**Tools**][tools]
 
-You can find us on [Discord (pret, #pokered)](https://discord.gg/d5dubZ3).
+You can find other like-minded folk on [Discord (pret, #pokered)](https://discord.gg/d5dubZ3).
 
 For other pret projects, see [pret.github.io](https://pret.github.io/).
 

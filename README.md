@@ -117,8 +117,8 @@ Clefairy - Mirage Mail<br/>
 <br/>
 <b>Creidts:</b><br/>
 Opening Clefairy animation & sprites: [Sindorman](https://www.instagram.com/p/B_dAOwBJTfq/)<br/>
-Clefairy emotion portrait base: [Artsy-Theo](https://www.tumblr.com/artsy-theo/180634822998/Pokémon-pinkspecial-clefairy-edition-clefairy?source=share)<br/>
-Modified Gen 1 back sprites: [SkidMarc25](https://www.deviantart.com/skidmarc25/art/Pokémon-Red-Blue-Green-Yellow-Back-Sprite-Touchups-977256591) (the Clefairy sprite is mine though)<br/>
+Clefairy emotion portrait base: [Artsy-Theo](https://www.tumblr.com/artsy-theo/180634822998/pokemon-pinkspecial-clefairy-edition-clefairy?source=share)<br/>
+Modified Gen 1 back sprites: [SkidMarc25](https://www.deviantart.com/skidmarc25/art/pokemon-Red-Blue-Green-Yellow-Back-Sprite-Touchups-977256591) (the Clefairy sprite is mine though)<br/>
 Surfing Clefairy wading/Overworld Sprites for Blue and Yellow: [Kester Henrick](https://www.instagram.com/kesterhenrickpixels/)<br/>
 Goldeen, Psyduck, & Dragonite slot machine sprites: [LuigiTKO](https://x.com/LuigiTKO/status/1501979255001038850)<br/>
 Orange slot machine sprite: Pac-Man<br/>
@@ -126,7 +126,7 @@ Coding assistance: pret's Discord<br/>
 Traced official art & Sprites: GameFreak & Nintendo<br/>
 Clefairy/Clefa Sfx: Pokémon Stadium, Pokémon Channel, Super Smash Bros.<br/>
 
-Head over to the Releases page to [download the latest release](https://github.com/JcFerggy/Poképink/releases).
+Head over to the Releases page to [download the latest release](https://github.com/JcFerggy/pokepink/releases).
 
 <hr>
 
@@ -149,13 +149,13 @@ To set up the repository, see [**INSTALL.md**](INSTALL.md).
 - [**Symbols**][symbols]
 - [**Tools**][tools]
 
-You can find other like-minded folk on [Discord (pret, #Pokéred)](https://discord.gg/d5dubZ3).
+You can find other like-minded folk on [Discord (pret, #pokered)](https://discord.gg/d5dubZ3).
 
 For other pret projects, see [pret.github.io](https://pret.github.io/).
 
-[wiki]: https://github.com/pret/Pokéyellow/wiki
-[tutorials]: https://github.com/pret/Pokéyellow/wiki/Tutorials
-[symbols]: https://github.com/pret/Pokéyellow/tree/symbols
+[wiki]: https://github.com/pret/pokeyellow/wiki
+[tutorials]: https://github.com/pret/pokeyellow/wiki/Tutorials
+[symbols]: https://github.com/pret/pokeyellow/tree/symbols
 [tools]: https://github.com/pret/gb-asm-tools
-[ci]: https://github.com/pret/Pokéyellow/actions
-[ci-badge]: https://github.com/pret/Pokéyellow/actions/workflows/main.yml/badge.svg
+[ci]: https://github.com/pret/pokeyellow/actions
+[ci-badge]: https://github.com/pret/pokeyellow/actions/workflows/main.yml/badge.svg

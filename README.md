@@ -118,10 +118,10 @@ Clefairy - Mirage Mail<br/>
 <b>Creidts:</b><br/>
 Opening Clefairy animation & sprites: [Sindorman](https://www.instagram.com/p/B_dAOwBJTfq/)<br/>
 Clefairy emotion portrait base: [Artsy-Theo](https://www.tumblr.com/artsy-theo/180634822998/pokemon-pinkspecial-clefairy-edition-clefairy?source=share)<br/>
-Modified Gen 1 back sprites: [SkidMarc25](https://www.deviantart.com/skidmarc25/art/Pokemon-Red-Blue-Green-Yellow-Back-Sprite-Touchups-977256591) (The Clefairy sprite is mine though)<br/>
+Modified Gen 1 back sprites: [SkidMarc25](https://www.deviantart.com/skidmarc25/art/Pokemon-Red-Blue-Green-Yellow-Back-Sprite-Touchups-977256591) (the Clefairy sprite is mine though)<br/>
 Surfing Clefairy wading/Overworld Sprites for Blue and Yellow: [Kester Henrick](https://www.instagram.com/kesterhenrickpixels/)<br/>
 Goldeen, Psyduck, & Dragonite slot machine sprites: [LuigiTKO](https://x.com/LuigiTKO/status/1501979255001038850)<br/>
-Orange slot machine sprite: Pacman<br/>
+Orange slot machine sprite: Pac-Man<br/>
 Coding assistance: pret's Discord<br/>
 Traced official art & Sprites: GameFreak & Nintendo<br/>
 Clefairy/Clefa Sfx: Pokemon Stadium, Pokemon Channel, Super Smash Bros.<br/>

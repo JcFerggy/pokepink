@@ -69,11 +69,63 @@ Other things I've changed:
 - I let Prof. Oak heal you when registering your team in the Hall of Fame after always forgetting to heal afterwards.
 - Clefairy learnset has been edited to more closely match Pikachu's progression.
 - Clefairy can now learn HM03 Surf (also TM39 Swift) and can play the Surfing House mini-game while knowing Surf.
+- The Linking Cable can be purchased at the Celedon Department Store for 8,000P to allow evolving trade Pokemon (necessary in this world of solo emulator play).
 - The S.S. Anne now will redock after beating the champion. (No new trainers or parties, this is just for those who might have missed an item or wanted to read the restored harbor sign).
 - Two new cuttable trees have been added to ease backtracking in Route 4 and Fuchsia City without breaking the flow of progression.
+- Pokemon Mansion tiles have been edited to make it easier to understand you can jump down a floor.
 - Due to plot related reasons, Mewtwo has been replaced with the Virtual Console Event Mew, and will have the proper OT and ID number when caught. 
 
-![alt text](https://i.imgur.com/rhGvr5p.png "Slot Machine")![alt text](https://i.imgur.com/BVqXKVq.png "Surfing Clefairy")![alt text](https://i.imgur.com/dgvvtXP.png "Clefairy's Beach")![alt text](https://i.imgur.com/fRmFR4f.png "Clefairy's Beach Surfing")![alt text](https://i.imgur.com/SJbZ9ly.png "Clefairy's Beach High Score")![alt text](https://i.imgur.com/xMnN8xo.png "Clefairy's Beach Print Out")![alt text](https://i.imgur.com/wj7gq9B.png "Route 4 Tree")![alt text](https://i.imgur.com/5fHvQ4r.png "Fuchsia City Tree")![alt text](https://i.imgur.com/L9q3LiQ.png "Wild Mew")![alt text](https://i.imgur.com/1iWpu5c.png "Mew Encounter")
+![alt text](https://i.imgur.com/rhGvr5p.png "Slot Machine")![alt text](https://i.imgur.com/BVqXKVq.png "Surfing Clefairy")![alt text](https://i.imgur.com/dgvvtXP.png "Clefairy's Beach")![alt text](https://i.imgur.com/fRmFR4f.png "Clefairy's Beach Surfing")![alt text](https://i.imgur.com/SJbZ9ly.png "Clefairy's Beach High Score")![alt text](https://i.imgur.com/xMnN8xo.png "Clefairy's Beach Print Out")![alt text](https://i.imgur.com/nP54F3C.png "Linking Cable")![alt text](https://i.imgur.com/wj7gq9B.png "Route 4 Tree")![alt text](https://i.imgur.com/5fHvQ4r.png "Fuchsia City Tree")![alt text](https://i.imgur.com/WoBP44f.png "Cinnabar Mansion Ledge")![alt text](https://i.imgur.com/1iWpu5c.png "Mew Encounter")![alt text](https://i.imgur.com/ZjdrNLt.png "Mew Status Screen")
+
+<b>Updated Clefairy's Learnset:</b><br/>
+06 	Defense Curl<br/>
+09 	Sing<br/>
+12 	Doubleslap<br/>
+16 	Double Team<br/>
+21 	Headbutt<br/>
+28 	Psychic <br/>
+31 	Minimize<br/>
+37 	Metronome<br/>
+42 	Mega Kick<br/>
+48 	Light Screen<br/>
+HM03 Surf<br/>
+TM39 Swift<br/>
+<br/>
+<b>In-game Trades:</b><br/>
+Pikachu		>	Starmie 	Named "Astral" (Route 2)<br/>
+Voltorb		>	Kadabra 	Named "Houdini" (Underground Path 5-6)<br/>
+Ditto		  >	Dodrio 		Named "Stooges" (Route 11)<br/>
+Rhyhorn		>	Chansey 	Named "Cheryl" (Route 18)<br/>
+Kingler		>	Kangaskhan 	Named "Genghis" (Pokemon Lab 1)<br/>
+Vulpix		>	Seel	 	Named "Cadet" (Pokemon Lab 2)<br/>
+Tauros		>	Weezing 	Named "Smokey" (Pokemon Lab 3)<br/>
+<br/>
+Gift Squirtle <> Gift Charmander<br/>
+<br/>
+<b>Game Corner Prizes:</b><br/>
+0200 Lv 12 Abra<br/>
+1100 Lv 16 Growlithe<br/>
+1600 Lv 20 Slowpoke<br/>
+<br/>
+3200 Lv 26 Raichu<br/>
+5000 Lv 28 Dragonair<br/>
+9100 Lv 24 Porygon<br/>
+<br/>
+<b>Held Item when traded to Gen 2 via Time Capsule:</b><br/>
+Dratini>Dragonair>Dragonite - Blue Sky Mail<br/>
+Clefairy - Mirage Mail<br/>
+<br/>
+<b>Creidts:</b><br/>
+Opening Clefairy animation & sprites: Sindorman<br/>
+Clefairy emotion portrait base: Artsy-Theo<br/>
+Surfing Clefairy wading/Overworld Sprites for Blue and Yellow: Kester Henrick: <br/>
+Goldeen, Psyduck, & Dragonite slot machine sprites: LuigiTKO<br/>
+Orange slot machine sprite: Pacman<br/>
+Coding assistance: pret's Discord<br/>
+Traced official art & Sprites: GameFreak & Nintendo<br/>
+Clefairy/Clefa Sfx: Pokemon Stadium, Pokemon Channel, Super Smash Bros.<br/>
+<br/>
+Special thanks to my friend Matt for the in-game trade name "Genghis", and to my brother for the in-game trade name "Cadet".
 
 Head over to the Releases page to [download the latest release](https://github.com/JcFerggy/pokepink/releases).
 

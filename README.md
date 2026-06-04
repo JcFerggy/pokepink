@@ -70,6 +70,7 @@ Other things I've changed:
 - Clefairy learnset has been edited to more closely match Pikachu's progression.
 - Clefairy can now learn HM03 Surf (also TM39 Swift) and can play the Surfing House mini-game while knowing Surf.
 - The Linking Cable can be purchased at the Celedon Department Store for 8,000P to allow evolving trade Pokémon (necessary in this world of solo emulator play).
+- You can now fly from the Celedon City Department Store and Mansion roofs.
 - The S.S. Anne now will redock after beating the champion. (No new trainers or parties, this is just for those who might have missed an item or wanted to read the restored harbor sign).
 - Two new cuttable trees have been added to ease backtracking in Route 4 and Fuchsia City without breaking the flow of progression.
 - There is a warp tile on Silph Co. Floor 11 that will take you back to the lobby.

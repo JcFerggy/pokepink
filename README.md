@@ -92,13 +92,13 @@ HM03 Surf<br/>
 TM39 Swift<br/>
 <br/>
 <b>In-game Trades:</b><br/>
-Pikachu		>	Starmie 	Named "Astral" (Route 2)<br/>
-Voltorb		>	Kadabra 	Named "Houdini" (Underground Path 5-6)<br/>
-Ditto			>	Dodrio 		Named "Stooges" (Route 11)<br/>
-Rhyhorn		>	Chansey 	Named "Cheryl" (Route 18)<br/>
-Kingler		>	Kangaskhan 	Named "Genghis" (Pokémon Lab 1)<br/>
-Vulpix		>	Seel	 	Named "Cadet" (Pokémon Lab 2)<br/>
-Tauros		>	Weezing 	Named "Smokey" (Pokémon Lab 3)<br/>
+Pikachu		>	Starmie 	named "Astral" (Route 2)<br/>
+Voltorb		>	Kadabra 	named "Houdini" (Underground Path 5-6)<br/>
+Ditto			>	Dodrio 		named "Stooges" (Route 11)<br/>
+Rhyhorn		>	Chansey 	named "Cheryl" (Route 18)<br/>
+Kingler		>	Kangaskhan 	named "Genghis" (Pokémon Lab 1)<br/>
+Vulpix		>	Seel	 	named "Cadet" (Pokémon Lab 2)<br/>
+Tauros		>	Weezing 	named "Smokey" (Pokémon Lab 3)<br/>
 <br/>
 Gift Squirtle <> Gift Charmander<br/>
 <br/>

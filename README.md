@@ -105,7 +105,7 @@ Gift Squirtle <> Gift Charmander<br/>
 <b>Game Corner Prizes:</b><br/>
 0200 Lv 12 Abra<br/>
 1100 Lv 16 Growlithe<br/>
-1600 Lv 20 SlowPoké<br/>
+1600 Lv 20 Slowpoke<br/>
 <br/>
 3200 Lv 26 Raichu<br/>
 5000 Lv 28 Dragonair<br/>

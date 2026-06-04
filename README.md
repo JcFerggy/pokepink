@@ -65,16 +65,16 @@ The thing I am most proud of (besides the Title Screen animation. I had no part 
 ![alt text](https://i.imgur.com/vrM8xWP.png "Blue Encounter 1")![alt text](https://i.imgur.com/RvoSnKe.png "Blue Sprite")![alt text](https://i.imgur.com/9PjMGP0.png "Blue Encounter 2")![alt text](https://i.imgur.com/sWDyuLi.png "Blue Encounter 3")![alt text](https://i.imgur.com/qQyGmtx.png "Blue Encounter 4")![alt text](https://i.imgur.com/d06uGN7.png "Blue Encounter 5")![alt text](https://i.imgur.com/d1pYZ4k.png "Blue Encounter 6")![alt text](https://i.imgur.com/lJcJduQ.png "Yellow Disguised")![alt text](https://i.imgur.com/g43jyXb.png "Yellow Reveal")![alt text](https://i.imgur.com/5vJnN41.png "Yellow Encounter")
 
 Other things I've changed:
-- Slot Machine graphics to fit the Clefairy aesthetic.
-- I let Prof. Oak heal you when registering your team in the Hall of Fame after always forgetting to heal afterwards.
 - Clefairy learnset has been edited to more closely match Pikachu's progression.
 - Clefairy can now learn HM03 Surf (also TM39 Swift) and can play the Surfing House mini-game while knowing Surf.
+- Slot Machine graphics to fit the Clefairy aesthetic.
 - The Linking Cable can be purchased at the Celedon Department Store for 8,000P to allow evolving trade Pokémon (necessary in this world of solo emulator play).
 - You can now fly from the Celedon City Department Store and Mansion roofs.
 - The S.S. Anne now will redock after beating the champion. (No new trainers or parties, this is just for those who might have missed an item or wanted to read the restored harbor sign).
 - Two new cuttable trees have been added to ease backtracking in Route 4 and Fuchsia City without breaking the flow of progression.
 - There is a warp tile on Silph Co. Floor 11 that will take you back to the lobby.
 - Pokémon Mansion tiles have been edited to make it easier to understand you can jump down a floor.
+- I let Prof. Oak heal you when registering your team in the Hall of Fame after always forgetting to heal afterwards.
 - Due to plot related reasons, Mewtwo has been replaced with the Virtual Console Event Mew, and will have the proper OT and ID number when caught. 
 
 ![alt text](https://i.imgur.com/rhGvr5p.png "Slot Machine")![alt text](https://i.imgur.com/BVqXKVq.png "Surfing Clefairy")![alt text](https://i.imgur.com/dgvvtXP.png "Clefairy's Beach")![alt text](https://i.imgur.com/fRmFR4f.png "Clefairy's Beach Surfing")![alt text](https://i.imgur.com/SJbZ9ly.png "Clefairy's Beach High Score")![alt text](https://i.imgur.com/xMnN8xo.png "Clefairy's Beach Print Out")![alt text](https://i.imgur.com/nP54F3C.png "Linking Cable")![alt text](https://i.imgur.com/wj7gq9B.png "Route 4 Tree")![alt text](https://i.imgur.com/5fHvQ4r.png "Fuchsia City Tree")![alt text](https://i.imgur.com/WoBP44f.png "Cinnabar Mansion Ledge")![alt text](https://i.imgur.com/1iWpu5c.png "Mew Encounter")![alt text](https://i.imgur.com/ZjdrNLt.png "Mew Status Screen")

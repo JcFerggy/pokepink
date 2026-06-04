@@ -125,8 +125,6 @@ Orange slot machine sprite: Pac-Man<br/>
 Coding assistance: pret's Discord<br/>
 Traced official art & Sprites: GameFreak & Nintendo<br/>
 Clefairy/Clefa Sfx: Pokemon Stadium, Pokemon Channel, Super Smash Bros.<br/>
-<br/>
-Special thanks to my friend Matt for the in-game trade name "Genghis", and to my brother for the in-game trade name "Cadet".
 
 Head over to the Releases page to [download the latest release](https://github.com/JcFerggy/pokepink/releases).
 

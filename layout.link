@@ -209,7 +209,8 @@ ROMX $39
 	"Pikachu Graphics 1"
 ROMX $3A
 	"bank3A"
-; bank $3B is empty
+ROMX $3B
+	"NPC Sprites 4"
 ROMX $3C
 	"Pikachu PCM"
 	"Tilesets 4"

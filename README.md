@@ -5,7 +5,7 @@
 
 This project is what I imagined a hypothetical ‘Pokémon Pink’ would look like when rumors of one were first mentioned in the Giga Leak™. Along with the trivia of Clefairy once being the potential mascot for the series before Pikachu, and the often overlooked Pocket Monsters manga where Red chooses Clefairy as his starter; there is plenty of good reference material for such a project. With that said, it was thanks to seeing Sindorman's animation on [Instagram](https://www.instagram.com/p/B_dAOwBJTfq/), which then lead me to Artsy-Theo's posting of these four emotion portraits on [Tumblr](https://www.tumblr.com/artsy-theo/180634822998/Pokémon-pinkspecial-clefairy-edition-clefairy?source=share), and everything afterwards has just been me trying my best, having never coded in assembly before starting this project; though I have gotten tones of assistance from the pret Discord from all the lovely people on there.
 
-[![IMAGE ALT TEXT HERE](https://i.imgur.com/6wi3bWc.png)](https://www.youtube.com/watch?v=jP5R1bcot8g)
+[![YouTube Trailer Link](https://i.imgur.com/6wi3bWc.png)](https://youtu.be/y8IzXygD4JI)
 
 (Did YOU Know? Pokémon Green had its own exclusive Super GameBoy palette? The international releases of Red & Blue were built off of Jp Blue, which itself was built off of Jp Red; then the devs forgot about this detail, and Pokémon Red's palette was used twice internationally. Every town across Kanto had their colors slightly shifted between Red and Green, but most notable was the colors used for Pallet Town (and Lorelei Room) being teal or purple in Red or Green respectively. Cinnabar Island does use the same base colors, however the background shade of white had been tinted in each versions respective color, so no screen goes untouched.
 

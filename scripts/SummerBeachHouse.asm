@@ -198,7 +198,6 @@ SummerBeachHouseFairyText:
 
 SummerBeachHousePoster1Text:
 	text_asm
-	ResetEvent EVENT_BEAT_SUMMERBEACHHOUSE_TRAINER_0
 	ld hl, .SummerBeachHousePoster1Text2
 	ld a, [wd471]
 	bit 6, a

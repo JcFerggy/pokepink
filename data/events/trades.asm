@@ -22,8 +22,8 @@ TradeMons:
 	npctrade MEW,        	MEW,      	TRADE_DIALOGSET_HAPPY,     	"LISA"    	; unused
 	npctrade RHYHORN,    	CHANSEY, 	TRADE_DIALOGSET_CASUAL,    	"CHERYL" 	; Route 18
 	npctrade PIDGEOT,    	PIDGEOT,  	TRADE_DIALOGSET_EVOLUTION, 	"MCFLY"   	; unused
-	npctrade KINGLER,    	KANGASKHAN, TRADE_DIALOGSET_HAPPY, 		"GENGHIS" 	; Pokemon Lab 1
-	npctrade VULPIX,		SEEL,		TRADE_DIALOGSET_HAPPY,     	"CADET" 	; Pokemon Lab 2
+	npctrade KINGLER,    	KANGASKHAN, TRADE_DIALOGSET_HAPPY, 		"GENGHIS" 	; Pokemon Lab 1 Thanks Matt
+	npctrade VULPIX,		SEEL,		TRADE_DIALOGSET_HAPPY,     	"CADET" 	; Pokemon Lab 2 Thanks Brad
 	npctrade VOLTORB,     	KADABRA,  	TRADE_DIALOGSET_EVOLUTION, 	"HOUDINI" 	; Underground Path 5-6
 	assert_table_length NUM_NPC_TRADES
 	

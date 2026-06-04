@@ -56,7 +56,7 @@ Mansion1Script_Switches::
 	jp DisplayTextID
 	
 PokemonMansion1FResetScripts:
-	CheckAndResetEvent EVENT_57E
+	CheckAndResetEvent EVENT_POKEMONMANSION1F_CHIEF_RESET
 	call nz, PokemonMansion1FScript_HideChief
 	xor a
 	ld [wJoyIgnore], a
@@ -246,7 +246,7 @@ PokemonMansion1FChiefStartBattleScript:
 	;add 6 ;PINK adjusted pointer from adding Rival data
 	ld a, 5 ; trainer number
 	ld [wTrainerNo], a
-	SetEvent EVENT_57E
+	SetEvent EVENT_POKEMONMANSION1F_CHIEF_RESET
 	ld a, SCRIPT_POKEMONMANSION1F_CHIEF_AFTER_BATTLE
 	call PokemonMansion1FSetCurScript
 	ret
@@ -258,7 +258,7 @@ PokemonMansion1FChiefAfterBattleScript:
 	ld a, PAD_CTRL_PAD
 	ld [wJoyIgnore], a
 	SetEvent EVENT_BEAT_MANSION_CHIEF
-	ResetEventReuseHL EVENT_57E
+	ResetEventReuseHL EVENT_POKEMONMANSION1F_CHIEF_RESET
 	ld a, PLAYER_DIR_DOWN
 	ld [wPlayerMovingDirection], a
 	ld a, POKEMONMANSION1F_CHIEF

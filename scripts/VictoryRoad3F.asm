@@ -9,7 +9,7 @@ VictoryRoad3F_Script:
 	ret
 	
 VictoryRoad3FResetScripts:
-	CheckAndResetEvent EVENT_57E
+	CheckAndResetEvent EVENT_VICTORYROAD3F_CHIEF_RESET
 	call nz, VictoryRoad3FScript_HideChief
 	xor a
 	ld [wJoyIgnore], a
@@ -251,7 +251,7 @@ VictoryRoad3FChiefStartBattleScript:
 	;add 6 ;PINK adjusted pointer from adding Rival data
 	ld a, 6 ; trainer number
 	ld [wTrainerNo], a
-	SetEvent EVENT_57E
+	SetEvent EVENT_VICTORYROAD3F_CHIEF_RESET
 	ld a, SCRIPT_VICTORYROAD3F_CHIEF_AFTER_BATTLE
 	call VictoryRoad3FSetCurScript
 	ret
@@ -263,7 +263,7 @@ VictoryRoad3FChiefAfterBattleScript:
 	ld a, PAD_CTRL_PAD
 	ld [wJoyIgnore], a
 	SetEvent EVENT_BEAT_UNDERGROUND_CHIEF
-	ResetEventReuseHL EVENT_57E
+	ResetEventReuseHL EVENT_VICTORYROAD3F_CHIEF_RESET
 	ld a, PLAYER_DIR_DOWN
 	ld [wPlayerMovingDirection], a
 	ld a, VICTORYROAD3F_CHIEF

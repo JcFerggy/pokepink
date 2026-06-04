@@ -8,7 +8,7 @@ SafariZoneWest_Script:
 	ret
 	
 SafariZoneWestResetScripts:
-	CheckAndResetEvent EVENT_57E
+	CheckAndResetEvent EVENT_SAFARIZONEWEST_CHIEF_RESET
 	call nz, SafariZoneWestScript_HideChief
 	xor a
 	ld [wJoyIgnore], a
@@ -220,7 +220,7 @@ SafariZoneWestChiefStartBattleScript:
 	;add 6 ;PINK adjusted pointer from adding Rival data
 	ld a, 4 ; trainer number
 	ld [wTrainerNo], a
-	SetEvent EVENT_57E
+	SetEvent EVENT_SAFARIZONEWEST_CHIEF_RESET
 	ld a, SCRIPT_SAFARIZONEWEST_CHIEF_AFTER_BATTLE
 	call SafariZoneWestSetCurScript
 	ret
@@ -232,7 +232,7 @@ SafariZoneWestChiefAfterBattleScript:
 	ld a, PAD_CTRL_PAD
 	ld [wJoyIgnore], a
 	SetEvent EVENT_BEAT_SAFARIZONEWEST_CHIEF
-	ResetEventReuseHL EVENT_57E
+	ResetEventReuseHL EVENT_SAFARIZONEWEST_CHIEF_RESET
 	ld a, PLAYER_DIR_DOWN
 	ld [wPlayerMovingDirection], a
 	ld a, SAFARIZONEWEST_CHIEF

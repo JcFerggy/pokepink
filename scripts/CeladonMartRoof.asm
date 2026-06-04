@@ -8,7 +8,7 @@ CeladonMartRoof_Script:
 	ret
 	
 CeladonMartRoofResetScripts:
-	CheckAndResetEvent EVENT_57E
+	CheckAndResetEvent EVENT_CELADONMARTROOF_CHIEF_RESET
 	call nz, CeladonMartRoofScript_ShowObject
 	xor a
 	ld [wJoyIgnore], a
@@ -191,7 +191,7 @@ CeladonMartRoofChiefStartBattleScript:
 	;add 6 ;PINK adjusted pointer from adding Rival data
 	ld a, 3 ; trainer number
 	ld [wTrainerNo], a
-	SetEvent EVENT_57E
+	SetEvent EVENT_CELADONMARTROOF_CHIEF_RESET
 	ld a, SCRIPT_CELADONMARTROOF_CHIEF_AFTER_BATTLE
 	call CeladonMartRoofSetCurScript
 	ret
@@ -203,7 +203,7 @@ CeladonMartRoofChiefAfterBattleScript:
 	ld a, PAD_CTRL_PAD
 	ld [wJoyIgnore], a
 	SetEvent EVENT_BEAT_CELADONMARTROOF_CHIEF
-	ResetEventReuseHL EVENT_57E
+	ResetEventReuseHL EVENT_CELADONMARTROOF_CHIEF_RESET
 	ld a, PLAYER_DIR_LEFT
 	ld [wPlayerMovingDirection], a
 	ld a, CELADONMARTROOF_CHIEF

@@ -8,7 +8,7 @@ UndergroundPathNorthSouth_Script:
 	ret
 	
 UndergroundPathNorthSouthResetScripts:
-	CheckAndResetEvent EVENT_57E
+	CheckAndResetEvent EVENT_UNDERGROUNDPATHNORTHSOUTH_CHIEF_RESET
 	call nz, UndergroundPathNorthSouthScript_HideChief
 	xor a
 	ld [wJoyIgnore], a
@@ -192,7 +192,7 @@ UndergroundPathNorthSouthChiefStartBattleScript:
 	;add 6 ;PINK adjusted pointer from adding Rival data
 	ld a, 1 ; trainer number
 	ld [wTrainerNo], a
-	SetEvent EVENT_57E
+	SetEvent EVENT_UNDERGROUNDPATHNORTHSOUTH_CHIEF_RESET
 	ld a, SCRIPT_UNDERGROUNDPATHNORTHSOUTH_CHIEF_AFTER_BATTLE
 	call UndergroundPathNorthSouthSetCurScript
 	ret
@@ -204,7 +204,7 @@ UndergroundPathNorthSouthChiefAfterBattleScript:
 	ld a, PAD_CTRL_PAD
 	ld [wJoyIgnore], a
 	SetEvent EVENT_BEAT_UNDERGROUND_CHIEF
-	ResetEventReuseHL EVENT_57E
+	ResetEventReuseHL EVENT_UNDERGROUNDPATHNORTHSOUTH_CHIEF_RESET
 	ld a, PLAYER_DIR_UP
 	ld [wPlayerMovingDirection], a
 	ld a, UNDERGROUNDPATHNORTHSOUTH_CHIEF

@@ -8,7 +8,7 @@ UndergroundPathWestEast_Script:
 	ret
 	
 UndergroundPathWestEastResetScripts:
-	CheckAndResetEvent EVENT_57E
+	CheckAndResetEvent EVENT_UNDERGROUNDPATHWESTEAST_CHIEF_RESET
 	call nz, UndergroundPathWestEastScript_HideChief
 	xor a
 	ld [wJoyIgnore], a
@@ -208,7 +208,7 @@ UndergroundPathWestEastChiefStartBattleScript:
 	;add 6 ;PINK adjusted pointer from adding Rival data
 	ld a, 2 ; trainer number
 	ld [wTrainerNo], a
-	SetEvent EVENT_57E
+	SetEvent EVENT_UNDERGROUNDPATHWESTEAST_CHIEF_RESET
 	ld a, SCRIPT_UNDERGROUNDPATHWESTEAST_CHIEF_AFTER_BATTLE
 	call UndergroundPathWestEastSetCurScript
 	ret
@@ -220,7 +220,7 @@ UndergroundPathWestEastChiefAfterBattleScript:
 	ld a, PAD_CTRL_PAD
 	ld [wJoyIgnore], a
 	SetEvent EVENT_BEAT_UNDERGROUND2_CHIEF
-	ResetEventReuseHL EVENT_57E
+	ResetEventReuseHL EVENT_UNDERGROUNDPATHWESTEAST_CHIEF_RESET
 	ld a, PLAYER_DIR_RIGHT
 	ld [wPlayerMovingDirection], a
 	ld a, UNDERGROUNDPATHWESTEAST_CHIEF

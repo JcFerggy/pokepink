@@ -13,14 +13,14 @@ Route13WildMons:
 	end_grass_wildmons
 
 	def_water_wildmons 3 ; encounter rate
-	db 15, SLOWPOKE
-	db 15, SLOWPOKE
-	db 15, SLOWPOKE
-	db 15, SLOWPOKE
-	db 15, SLOWPOKE
-	db 15, SLOWPOKE
-	db 15, SLOWPOKE
-	db 15, SLOWPOKE
+	db 15, POLIWAG
+	db 15, POLIWAG
+	db 15, POLIWAG
+	db 15, POLIWAG
+	db 15, POLIWAG
+	db 15, POLIWAG
+	db 15, POLIWAG
+	db 15, POLIWAG
 	db 15, POLIWHIRL
 	db 20, POLIWHIRL
 	end_water_wildmons

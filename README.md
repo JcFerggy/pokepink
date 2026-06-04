@@ -72,6 +72,7 @@ Other things I've changed:
 - The Linking Cable can be purchased at the Celedon Department Store for 8,000P to allow evolving trade Pokémon (necessary in this world of solo emulator play).
 - The S.S. Anne now will redock after beating the champion. (No new trainers or parties, this is just for those who might have missed an item or wanted to read the restored harbor sign).
 - Two new cuttable trees have been added to ease backtracking in Route 4 and Fuchsia City without breaking the flow of progression.
+- There is a warp tile on Silph Co. Floor 11 that will take you back to the lobby.
 - Pokémon Mansion tiles have been edited to make it easier to understand you can jump down a floor.
 - Due to plot related reasons, Mewtwo has been replaced with the Virtual Console Event Mew, and will have the proper OT and ID number when caught. 
 
@@ -115,6 +116,11 @@ Gift Squirtle <> Gift Charmander<br/>
 Dratini>Dragonair>Dragonite - Blue Sky Mail<br/>
 Clefairy - Mirage Mail<br/>
 <br/>
+Final Tips:<br/>
+- Prof. Oak will give you five free Pokéballs if you beat the optional Rival fight on Route 22 and return to him without purchasing any yet.
+- If you run out of money for the Safari Zone; they will let you in after attempting to force your way in five times in a row. However, you will only have a single Safari Ball.
+<br/>
+
 <b>Creidts:</b><br/>
 Opening Clefairy animation & sprites: [Sindorman](https://www.instagram.com/p/B_dAOwBJTfq/)<br/>
 Clefairy emotion portrait base: [Artsy-Theo](https://www.tumblr.com/artsy-theo/180634822998/pokemon-pinkspecial-clefairy-edition-clefairy?source=share)<br/>

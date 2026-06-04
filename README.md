@@ -58,7 +58,7 @@ Tangela<br/>
 Seel/Dewgong (Still Obtainable From In-game Trade)<br/>
 Growlithe (Still Obtainable From Game Corner)<br/>
 
-A more thorough breakdown of Wild Pokemon encounters and Trainer Parties can be found in this [Google Document](https://docs.google.com/spreadsheets/d/1JbOHSGnH0z9dL8ywdQEDGXxE3LqMNaawxaX7gbR1-D4/edit?usp=sharing).
+Some maps encounter tables have been altered to reference Pokemon seen in those locations in the Pocket Monsters manga. A more thorough breakdown of Wild Pokemon encounters and Trainer Parties can be found in this [Google Document](https://docs.google.com/spreadsheets/d/1JbOHSGnH0z9dL8ywdQEDGXxE3LqMNaawxaX7gbR1-D4/edit?usp=sharing).
 
 The thing I am most proud of (besides the Title Screen animation. I had no part in the art, but learning how to code it was a fun nightmare) are the new events added to reference the Pocket Monster's manga. Trainers Blue and Yellow have been added at points that roughly fit with their manga story progression, but their dialogue have been sanitized and altered to more fit with the events of the game (as the manga really goes off with its crude humor). Their name have also been omitted and instead replaced with a nickname, as their official titles of Blue and Yellow felt odd when the player could potentially name their rival "Blue" as well, so I didn't feel it necessary to properly name them. Busybody can be rematched with his most recent team in his Trashed House after every encounter with him, and Imposter acts as the post-game fight equivalent to Gen 2's Red. Yellow in the Manga only ever had Pikachu, so I had the rest of his team reflect Pocket Monsters manga Red's party, leaning on his team used during the Pokemon League.
 
@@ -116,10 +116,11 @@ Dratini>Dragonair>Dragonite - Blue Sky Mail<br/>
 Clefairy - Mirage Mail<br/>
 <br/>
 <b>Creidts:</b><br/>
-Opening Clefairy animation & sprites: Sindorman<br/>
-Clefairy emotion portrait base: Artsy-Theo<br/>
-Surfing Clefairy wading/Overworld Sprites for Blue and Yellow: Kester Henrick: <br/>
-Goldeen, Psyduck, & Dragonite slot machine sprites: LuigiTKO<br/>
+Opening Clefairy animation & sprites: [Sindorman](https://www.instagram.com/p/B_dAOwBJTfq/)<br/>
+Clefairy emotion portrait base: [Artsy-Theo](https://www.tumblr.com/artsy-theo/180634822998/pokemon-pinkspecial-clefairy-edition-clefairy?source=share)<br/>
+Modified Gen 1 back sprites: [SkidMarc25](https://www.deviantart.com/skidmarc25/art/Pokemon-Red-Blue-Green-Yellow-Back-Sprite-Touchups-977256591) (The Clefairy sprite is mine though)<br/>
+Surfing Clefairy wading/Overworld Sprites for Blue and Yellow: [Kester Henrick](https://www.instagram.com/kesterhenrickpixels/)<br/>
+Goldeen, Psyduck, & Dragonite slot machine sprites: [LuigiTKO](https://x.com/LuigiTKO/status/1501979255001038850)<br/>
 Orange slot machine sprite: Pacman<br/>
 Coding assistance: pret's Discord<br/>
 Traced official art & Sprites: GameFreak & Nintendo<br/>

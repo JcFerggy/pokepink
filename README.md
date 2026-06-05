@@ -127,6 +127,7 @@ Opening Clefairy animation & sprites: [Sindorman](https://www.instagram.com/p/B_
 Clefairy emotion portrait base: [Artsy-Theo](https://www.tumblr.com/artsy-theo/180634822998/pokemon-pinkspecial-clefairy-edition-clefairy?source=share)<br/>
 Modified Gen 1 back sprites: [SkidMarc25](https://www.deviantart.com/skidmarc25/art/pokemon-Red-Blue-Green-Yellow-Back-Sprite-Touchups-977256591) (the Clefairy sprite is mine though)<br/>
 Surfing Clefairy wading/Overworld Sprites for Blue and Yellow: [Kester Henrick](https://www.instagram.com/kesterhenrickpixels/)<br/>
+Custom Gym Leader and Elite Four sprites: [SirWhibbles](https://www.deviantart.com/sirwhibbles/art/Public-Let-s-Go-Kanto-v7-752703290)
 Goldeen, Psyduck, & Dragonite slot machine sprites: [LuigiTKO](https://x.com/LuigiTKO/status/1501979255001038850)<br/>
 Orange slot machine sprite: Pac-Man<br/>
 Coding assistance: pret's Discord<br/>

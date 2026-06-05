@@ -10,12 +10,13 @@ _CeruleanTrashedHouseChief1EndBattleText::
 	prompt
 
 _CeruleanTrashedHouseChief1AfterBattleText::
-	text "So many people"
+	text "Why do people"
 	line "think they can"
-	cont "just walk through."
+	cont "just walk through"
+	cont "our house?"
 	done
 
-_CeruleanTrashedHouseChief2BattleText:: ;PINK Removed AJ anime reference
+_CeruleanTrashedHouseChief2BattleText::
 	text "Please? Our"
 	line "house is not"
 	cont "a highway!"

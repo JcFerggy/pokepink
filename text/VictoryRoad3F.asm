@@ -75,7 +75,7 @@ _VictoryRoad3FChiefWaitedHereText::
 	cont "one second..."
 	
 	para "I thought I would"
-	line "actually get ahead"
+	line "finally get ahead"
 	cont "of you for once."
 	
 	para "Whew!"

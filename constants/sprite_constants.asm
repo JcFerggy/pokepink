@@ -72,6 +72,13 @@
 	const SPRITE_CHANSEY                 ; $44
 	const SPRITE_JESSIE                  ; $45
 	const SPRITE_JAMES                   ; $46
+	const SPRITE_BROCK                   ; $46
+	const SPRITE_MISTY                   ; $46
+	const SPRITE_SURGE                   ; $46
+	const SPRITE_ERIKA                   ; $46
+	const SPRITE_SABRINA                   ; $46
+	const SPRITE_KOGA2                   ; $46
+	const SPRITE_BLAINE                   ; $46
 DEF FIRST_STILL_SPRITE EQU const_value
 	const SPRITE_POKE_BALL               ; $47
 	const SPRITE_FOSSIL                  ; $48

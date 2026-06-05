@@ -44,7 +44,7 @@ _SafariZoneWestChiefWaitedHereText::
 	cont "one second..."
 
 	para "AHHGH! I have"
-	line "stich in my side"
+	line "stitch in my side"
 	cont "from running for"
 	cont "so long."
 	

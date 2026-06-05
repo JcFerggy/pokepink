@@ -91,3 +91,10 @@ JamesSprite::            INCBIN "gfx/sprites/james.2bpp"
 SECTION "NPC Sprites 4", ROMX
 BlueMangaSprite::        INCBIN "gfx/sprites/manga_blue.2bpp" ;PINK
 YellowMangaSprite::      INCBIN "gfx/sprites/manga_yellow.2bpp" ;PINK
+BrockSprite::            INCBIN "gfx/sprites/brock.2bpp"
+MistySprite::            INCBIN "gfx/sprites/misty.2bpp"
+SurgeSprite::            INCBIN "gfx/sprites/surge.2bpp"
+ErikaSprite::            INCBIN "gfx/sprites/erika.2bpp"
+SabrinaSprite::          INCBIN "gfx/sprites/sabrina.2bpp"
+Koga2Sprite::            INCBIN "gfx/sprites/koga2.2bpp"
+BlaineSprite::           INCBIN "gfx/sprites/blaine.2bpp"

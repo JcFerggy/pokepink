@@ -33,12 +33,12 @@ Wild Pokémon with recognized version pairings have had their encounters flipped
 <b>Global Changes:</b><br/>
 Sandshrew > Ekans<br/>
 Sandslash > Arbok<br/>
-Growlithe > Vulpix (Growlithe is still obtainable from the Game Corner)<br/>
 Grimer 		> Koffing<br/>
 Muk 			> Weezing<br/>
 Venonat 	> Meowth<br/>
 Venomoth 	> Persian<br/>
 Drowzee 	> Mr. Mime<br/>
+Growlithe > Vulpix (Growlithe is still obtainable from the Game Corner)<br/>
 <br/>
 <b>Super Rod:</b><br/>
 Horsea <	> Krabby<br/>
@@ -49,11 +49,13 @@ Staryu <	> Shellder<br/>
 <br/>
 <b>Added Wild:</b><br/>
 Weedle/Kakuna/Beedrill<br/>
+Pikachu<br/>
 Magmar<br/>
 Electabuzz<br/>
 Jynx<br/>
 <br/>
 <b>Removed Wild:</b><br/>
+Clefairy<br/>
 Venonat/Venomoth<br/>
 Tangela<br/>
 Seel/Dewgong (still obtainable from In-Game Trade)<br/>

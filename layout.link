@@ -228,6 +228,13 @@ ROMX $3E
 ROMX $3F
 	"Overworld Pikachu"
 	"NPC Sprites 3"
+ROMX $40
+	org $4000
+	"Party Mon Sprites Gfx 1"
+ROMX $41
+	org $4000
+	"Party Mon Sprites Gfx 2"
+	"Party Mon Sprites Routines"
 WRAM0
 	"Audio RAM"
 	org $c100

@@ -607,21 +607,33 @@ Trade_AnimCircledMon:
 	call UpdateCGBPal_BGP
 	ld hl, wShadowOAMSprite00TileID
 	ld de, OBJ_SIZE
-	ld c, $14
-.loop
+;	ld c, $14
+;.loop
+	ld c, $4
+.mon_loop
+	ld a, [hl]
+	xor 2
+	ld [hl], a
+	add hl, de
+	dec c
+	jr nz, .mon_loop
+	ld c, $10
+.circle_loop
 	ld a, [hl]
 	xor ICONOFFSET
 	ld [hl], a
 	add hl, de
 	dec c
-	jr nz, .loop
+;	jr nz, .loop
+	jr nz, .circle_loop
 	pop hl
 	pop bc
 	pop de
 	ret
 
 Trade_WriteCircledMonOAM:
-	farcall WriteMonPartySpriteOAMBySpecies
+	;farcall WriteMonPartySpriteOAMBySpecies
+	farcall LoadSinglePartyMonSprite ;PINK
 	call Trade_WriteCircleOAMBlock
 
 Trade_AddOffsetsToOAMCoords:

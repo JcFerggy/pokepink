@@ -34,8 +34,8 @@ MonPartyData:
 	nybble ICON_MON       ; NidoranM
 	nybble ICON_MON       ; Nidorino
 	nybble ICON_MON       ; Nidoking
-	nybble ICON_FAIRY     ; Clefairy
-	nybble ICON_FAIRY     ; Clefable
+	nybble ICON_CLEFAIRY  ; Clefairy
+	nybble ICON_CLEFAIRY  ; Clefable
 	nybble ICON_QUADRUPED ; Vulpix
 	nybble ICON_QUADRUPED ; Ninetales
 	nybble ICON_FAIRY     ; Jigglypuff

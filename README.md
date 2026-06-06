@@ -33,7 +33,7 @@ Wild Pokémon with recognized version pairings have had their encounters flipped
 <b>Global Changes:</b><br/>
 Sandshrew > Ekans<br/>
 Sandslash > Arbok<br/>
-Growlithe > Vulpix<br/>
+Growlithe > Vulpix (Growlithe is still obtainable from the Game Corner)<br/>
 Grimer 		> Koffing<br/>
 Muk 			> Weezing<br/>
 Venonat 	> Meowth<br/>
@@ -56,8 +56,7 @@ Jynx<br/>
 <b>Removed Wild:</b><br/>
 Venonat/Venomoth<br/>
 Tangela<br/>
-Seel/Dewgong (Still Obtainable From In-game Trade)<br/>
-Growlithe (Still Obtainable From Game Corner)<br/>
+Seel/Dewgong (still obtainable from In-Game Trade)<br/>
 
 Some maps encounter tables have been altered to reference Pokémon seen in those locations in the Pocket Monsters manga. A more thorough breakdown of Wild Pokémon encounters and Trainer Parties can be found in this [Google Document](https://docs.google.com/spreadsheets/d/1JbOHSGnH0z9dL8ywdQEDGXxE3LqMNaawxaX7gbR1-D4/edit?usp=sharing).
 

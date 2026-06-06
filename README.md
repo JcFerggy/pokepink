@@ -1,4 +1,4 @@
-<h1>Pokémon Pink Version: Special Clefairy Edition (UE)</h1>
+<h1>Pokémon Pink Version: Special Clefairy Edition (UE)</h1> 
 
 ![alt text](https://i.imgur.com/eeH7jU8.png "Pokémon Pink Version SGB Border")![alt text](https://i.imgur.com/vB9UcCH.png "Prof. Oak Speech Clefairy SGB Border")![alt text](https://i.imgur.com/RZLTdUp.png "Prof. Oak Capture Clefairy SGB Border")![alt text](https://i.imgur.com/8wkkejn.png "Rival Fight SGB Border")![alt text](https://i.imgur.com/NqL2ZrR.png "Clefairy Escapes Pokéball SGB Border")![alt text](https://i.imgur.com/PWaCrd1.png "Clefairy Dismissive SGB Border")
 

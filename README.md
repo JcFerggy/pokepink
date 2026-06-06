@@ -48,6 +48,7 @@ Poliwhirl <	> Seaking<br/>
 Staryu <	> Shellder<br/>
 <br/>
 <b>Added Wild:</b><br/>
+Weedle/Kakuna/Beedrill<br/>
 Magmar<br/>
 Electabuzz<br/>
 Jynx<br/>

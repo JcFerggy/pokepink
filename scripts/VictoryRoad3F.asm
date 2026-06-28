@@ -262,7 +262,7 @@ VictoryRoad3FChiefAfterBattleScript:
 	jp z, VictoryRoad3FResetScripts
 	ld a, PAD_CTRL_PAD
 	ld [wJoyIgnore], a
-	SetEvent EVENT_BEAT_UNDERGROUND_CHIEF
+	SetEvent EVENT_BEAT_VICTORY_ROAD_CHIEF
 	ResetEventReuseHL EVENT_VICTORYROAD3F_CHIEF_RESET
 	ld a, PLAYER_DIR_DOWN
 	ld [wPlayerMovingDirection], a
